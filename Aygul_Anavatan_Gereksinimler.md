@@ -4,7 +4,7 @@ Kullanıcıların satın alma işlemlerini tamamlaması için erişebileceği ö
 
 ---
 
-## 2) Yöneticiye Ürün Güncelleme  
+## 2) Yönetici Ürün Güncelleme  
 Yöneticiler, platformda yer alan ürünleri güncelleyerek içeriklerin her zaman doğru ve güncel olmasını sağlayabilir. Ürün adı, açıklama, fiyat ve stok bilgileri gibi temel bilgiler üzerinde değişiklik yapabilir, yeni resimler ekleyebilir veya mevcut resimleri değiştirebilirler. Bunun yanı sıra, ürünlerin belirli kategorilere atanması ve özelliklerinin düzenlenmesi gibi işlemler de yönetici paneli üzerinden gerçekleştirilebilir.
 
 ---
