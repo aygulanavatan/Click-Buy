@@ -1,6 +1,5 @@
 # Click & Buy
-# Proje Tanımı:
-Click & Buy - E-Ticaret Uygulaması
+**Proje Tanımı:**
 Click & Buy, kullanıcılarına hızlı, güvenilir ve keyifli bir online alışveriş deneyimi sunmak için geliştirilmiş bir e-ticaret platformudur. Geniş ürün seçenekleri ve sezgisel arayüzü sayesinde, müşterilerimiz aradıkları ürünlere zahmetsizce ulaşabilir.
 
 Platformumuz, en yeni ve trend ürünleri güvenilir markalarla buluşturur. Kullanıcılar, istedikleri ürünleri kolayca keşfedebilir, filtreleme seçenekleriyle aramalarını daraltabilir ve güvenli ödeme sistemimiz sayesinde alışverişlerini sorunsuz tamamlayabilir. Amacımız, alışveriş sürecini en konforlu ve pratik hale getirmektir.
@@ -14,22 +13,26 @@ Platformumuz, en yeni ve trend ürünleri güvenilir markalarla buluşturur. Kul
 
 Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşılamayı hedefliyoruz. Her zaman en iyi fiyatlarla kaliteli ürünleri sunmak için çalışıyoruz ve müşteri memnuniyeti bizim için en büyük önceliktir.
 
-Click & Buy e-ticaret uygulamamıza hoş geldiniz! Size hizmet vermek için sabırsızlanıyoruz.
 
-# Proje Kategorisi: E-Ticaret
+**Proje Kategorisi:** E-Ticaret
 
-# Referans Uygulama: trendyol.com
+**Referans Uygulama:** trendyol.com
 
-# Uygulama Adresi: click-buy.com
+**Uygulama Adresi:** click-buy.com
 
-# Grup Adı: Digital4
+**Grup Adı:** Digital4
 
-# Proje Ekibi:
+**Proje Ekibi:** Müge, Aygül, Melek, Sevcan
 
 
 Gereksinim Analizi
+
 Durum Diyagramı
+
 Durum Senaryoları
+
 Front-End
+
 Back-End
+
 Video Sunum
