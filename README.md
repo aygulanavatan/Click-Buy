@@ -27,13 +27,12 @@ Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşıla
 
 [ Gereksinim Analizi](gereksinim-analizi.md)
 
+[ Durum Diyagramı](docs/durum-diyagrami.md) 
 
-Durum Diyagramı
+[ Durum Senaryoları](docs/durum-senaryolari.md)  
 
-Durum Senaryoları
+[ Başlangıç Aşaması](docs/baslangic-asamasi.md)  
 
-Front-End
+[ Arka Uç (Back-End)](docs/back-end.md)  
 
-Back-End
-
-Video Sunum
+[ Video Sunum](docs/video-sunum.md)
