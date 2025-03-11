@@ -24,7 +24,8 @@ Click & Buy e-ticaret uygulamamıza hoş geldiniz! Size hizmet vermek için sab�
 
 # Grup Adı: Digital4
 
-Proje Ekibi: Ali, Veli, Selami, Ayşe, Fatma, Hayriye
+# Proje Ekibi:
+
 
 Gereksinim Analizi
 Durum Diyagramı
