@@ -25,7 +25,8 @@ Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşıla
 **Proje Ekibi:** Müge, Aygül, Melek, Sevcan
 
 
-Gereksinim Analizi
+[ Gereksinim Analizi](gereksinim-analizi.md)
+
 
 Durum Diyagramı
 
