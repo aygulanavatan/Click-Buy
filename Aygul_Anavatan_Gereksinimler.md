@@ -1,54 +1,30 @@
 ## Aygül Anavatan (Sipariş & Ödeme İşlemleri)
-### 📌 Ödeme Sayfası Görüntüleme  
-Kullanıcıların satın alma işlemlerini tamamlaması için erişebileceği ödeme ekranıdır. Güvenli ödeme yöntemleri ve sipariş özeti görüntülenir.
-
-- **Kredi kartı, banka havalesi, dijital cüzdan desteği**
-- **Fatura bilgileri ve ödeme onayı**
-- **SSL & 3D Secure güvenlik önlemleri**
+## 1) Ödeme Sayfası Görüntüleme
+Kullanıcıların satın alma işlemlerini tamamlaması için erişebileceği ödeme ekranıdır. Bu sayfa, siparişin toplam tutarını, ürün detaylarını ve ödeme seçeneklerini içerir. Kullanıcılar, kredi kartı, banka havalesi veya dijital cüzdan gibi farklı ödeme yöntemlerini kullanarak işlemlerini güvenli bir şekilde gerçekleştirebilir. Ayrıca, ödeme işlemi sırasında fatura bilgileri görüntülenir ve onay süreci tamamlanır. Sayfa, SSL ve 3D Secure gibi güvenlik önlemleriyle desteklenerek kullanıcı bilgilerinin korunmasını sağlar.
 
 ---
 
-### 📌 Yöneticiye Ürün Güncelleme  
-Yöneticilerin platformda **ürün bilgilerini değiştirebilmesini sağlar**.
-
-- **Ürün adı, açıklama, fiyat, stok bilgisi düzenleme**
-- **Ürün resimlerini güncelleme**
-- **Kategori ve özellik düzenlemeleri**
+## 2) Yöneticiye Ürün Güncelleme  
+Yöneticiler, platformda yer alan ürünleri güncelleyerek içeriklerin her zaman doğru ve güncel olmasını sağlayabilir. Ürün adı, açıklama, fiyat ve stok bilgileri gibi temel bilgiler üzerinde değişiklik yapabilir, yeni resimler ekleyebilir veya mevcut resimleri değiştirebilirler. Bunun yanı sıra, ürünlerin belirli kategorilere atanması ve özelliklerinin düzenlenmesi gibi işlemler de yönetici paneli üzerinden gerçekleştirilebilir.
 
 ---
 
-### 📌 Kargo Takip Numarası Ekleme  
-Satıcı veya yönetici tarafından **kargo takip numarası ekleme işlevidir**. Kullanıcılar, kargo firması üzerinden siparişlerini takip edebilir.
-
-- **Kargo firması ve takip numarası entegrasyonu**
-- **Canlı takip desteği**
-- **Teslimat durum güncellemeleri**
+## 3) Kargo Takip Numarası Ekleme  
+Satıcılar veya yöneticiler, kargo takip numarası ekleyerek kullanıcıların sipariş süreçlerini daha rahat takip etmesine olanak tanır. Kullanıcılar, siparişlerini belirli bir kargo firması üzerinden takip edebilir ve teslimat süreçlerini canlı olarak izleyebilir. Siparişin hangi aşamada olduğunu gösteren bu sistem, teslimat sürecine dair güncellemeleri içerecek şekilde tasarlanmıştır ve siparişin ne zaman teslim edileceği hakkında bilgi sağlar.
 
 ---
 
-### 📌 Sipariş Durumu Görüntüleme  
-Kullanıcıların siparişlerinin durumunu takip etmesini sağlar.
-
-- **Hazırlanıyor, Kargoya Verildi, Teslim Edildi statüleri**
-- **Tahmini teslimat süresi bilgisi**
-- **Sipariş takip numarası desteği**
+## 4) Sipariş Durumu Görüntüleme  
+Sipariş durumu görüntüleme özelliği, kullanıcıların siparişlerinin hangi aşamada olduğunu kontrol etmesini kolaylaştırır. Siparişlerin hazırlanıyor, kargoya verildi veya teslim edildi gibi farklı durumları, sistem üzerinde anlık olarak güncellenir. Kullanıcılar, siparişlerinin ne zaman teslim edileceğini tahmini teslimat süresi üzerinden öğrenebilir ve sipariş takip numarasıyla kargo firması üzerinden detaylı bilgi alabilir.
 
 ---
 
-### 📌 Satıcı Mesaj Paneli Görüntüleme  
-Müşteriler ile satıcılar arasındaki iletişimi sağlayan **mesajlaşma ekranıdır**.
-
-- **Siparişle ilgili soru sorma ve cevaplama**
-- **İade & değişim talepleri**
-- **Satıcı-müşteri destek mesajları**
+## 5) Satıcı Mesaj Paneli Görüntüleme  
+Satıcı mesaj paneli, müşteriler ile satıcılar arasındaki iletişimi sağlayan bir araçtır. Kullanıcılar, siparişleri hakkında satıcıya doğrudan mesaj gönderebilir ve ürünlerle ilgili bilgi alabilir. Aynı zamanda, iade ve değişim taleplerini bu panel üzerinden ileterek süreç hakkında destek alabilirler. Satıcılar da müşteri sorularını yanıtlayarak sipariş sonrası hizmet kalitesini artırabilir ve müşteri memnuniyetini sağlayabilir.
 
 ---
 
-### 📌 Sipariş Raporlarını Görüntüleme  
-Yöneticilerin veya satıcıların **satış analizleri yapmasını sağlayan** rapor ekranıdır.
-
-- **Toplam satış & sipariş adedi**
-- **En çok satılan ürünler analizi**
-- **İptal edilen siparişler raporu**
+## 6) Sipariş Raporlarını Görüntüleme  
+Sipariş raporlarını görüntüleme özelliği, yöneticilerin ve satıcıların satış analizleri yapmasını sağlayan bir işlevdir. Bu sayede, toplam satış hacmi, satılan ürün adedi, en çok tercih edilen ürünler ve iptal edilen siparişler gibi detaylı veriler incelenebilir. Bu bilgiler, satıcıların stok yönetimi yapmasına ve stratejik kararlar almasına yardımcı olur.
 
 ---
