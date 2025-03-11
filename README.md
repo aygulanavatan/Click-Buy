@@ -5,11 +5,11 @@ Click & Buy, kullanıcılarına hızlı, güvenilir ve keyifli bir online alış
 Platformumuz, en yeni ve trend ürünleri güvenilir markalarla buluşturur. Kullanıcılar, istedikleri ürünleri kolayca keşfedebilir, filtreleme seçenekleriyle aramalarını daraltabilir ve güvenli ödeme sistemimiz sayesinde alışverişlerini sorunsuz tamamlayabilir. Amacımız, alışveriş sürecini en konforlu ve pratik hale getirmektir.
 
 Öne Çıkan Özellikler:
-- Geniş ürün yelpazesi
+- Ürün yelpazesi geniş
 - Kullanıcı dostu arayüz
 - Hızlı ve güvenli ödeme sistemleri
 - Hızlı teslimat seçenekleri
-- Müşteri memnuniyetine odaklanan satış sonrası destek
+- Müşteri memnuniyetine önemseyen satış sonrası destek
 
 Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşılamayı hedefliyoruz. Her zaman en iyi fiyatlarla kaliteli ürünleri sunmak için çalışıyoruz ve müşteri memnuniyeti bizim için en büyük önceliktir.
 
