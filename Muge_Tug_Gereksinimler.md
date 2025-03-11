@@ -1,4 +1,4 @@
-# ### Gereksinim Analizi  
+# 
 
 1. **Kullanıcı Kayıt Olma** – Kullanıcılar ad, e-posta ve şifre bilgileriyle sisteme kayıt olabilir.  
 2. **Kullanıcı Bilgilerini Görüntüleme** – Kullanıcılar hesaplarına giriş yaptıktan sonra kişisel bilgilerini görüntüleyebilir.  
