@@ -4,7 +4,7 @@
 |:------------------------|:------------------------------------------------------------------|
 | **Senaryo Adı**         | Ödeme Sayfası Görüntüleme                                         |
 | **Ana Aktör**           | Kullanıcı                                                         |
-| **Ön Koşullar**         | Kullanıcı sisteme kayıtlıdır, giriş yapmış ve sepette en az bir ürün bulunmalıdır |
+| **Ön Koşullar**         | Kullanıcı sisteme kayıtlıdır, sisteme giriş yapmıştır ve sepette en az bir ürün bulunmalıdır |
 | **Hedef Şartlar**       | Ödeme sayfası görüntülenir                                        |
 | **Ana Başarı Senaryosu**| 1. Kullanıcı sisteme giriş yapar.<br>2. Kullanıcı sepetini görüntüler.<br>3. Kullanıcı "Ödeme Yap" butonuna tıklar.<br>4. Sistem ödeme sayfasını gösterir. |
 | **Genişlemeler**        | **1a:** Kullanıcı giriş yapamaz (şifre/kullanıcı adı hatalıdır).<br>- Sistem hata verir, kullanıcı bilgilerini tekrar girer.<br><br>**2a:** Sepet boş ise:<br>- Sistem hata mesajı gösterir.<br>- Kullanıcı ürün sayfasına yönlendirilir.<br><br>**3a:** Kullanıcı vazgeçer:<br>- Kullanıcı işlemi iptal eder.<br>- Sistem kullanıcıyı anasayfaya yönlendirir.<br><br>**3b:** Kullanıcı sepetini güncellemek ister:<br>- Sepete ürün ekler veya çıkarır.<br>- Tekrar "Ödeme Yap" butonuna tıklar.<br><br>**3c:** Kullanıcı indirim kuponu ekler:<br>- Kupon kodunu girer.<br>- Sistem indirimi uygular.<br>- Tekrar "Ödeme yap" butonuna tıklar.<br><br>**4a:** Ödeme sayfası görüntülenemez:<br>- Sistem hata mesajı gösterir.<br>- Kullanıcı işlemi tekrar dener veya destek alır.<br><br>**4b:** İnternet bağlantısı kesilir:<br>- Sistem hata verir.<br>- Kullanıcı bağlantıyı kontrol edip tekrar dener. |
