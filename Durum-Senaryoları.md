@@ -1,10 +1,9 @@
-[Müge Tuğ Durum Senaryosu](https://github.com/mugetug/durum-senaryosu)
 
-[Müge Tuğ Durum Senaryosu](./muge-tug-durum-senaryosu.md)
+[Müge Tuğ Durum Senaryosu](./muge-tug-Senaryolar.md)
 
+[Aygül Anavatan Durum Senaryosu](./aygul-anavatan-Senaryolar.md)
 
-[Aygül Anavatan Durum Senaryosu](https://github.com/aygulanavatan/durum-senaryosu)
+[Melek Yılmaz Durum Senaryosu](./Melek-Yilmaz-Senaryolar.md)
 
-[Melek Yılmaz Durum Senaryosu](https://github.com/melekyilmaz/proje-senaryosu)
+[Sevcan Sarıkaya Durum Senaryosu](./sevcan-sarikaya-Senaryolar.md)
 
-[Sevcan Sarıkaya Durum Senaryosu](https://github.com/sevcansarikaya/durum-senaryosu)
