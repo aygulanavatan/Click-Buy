@@ -1,7 +1,7 @@
 ## Durum Senaryoları
 
 | Senaryo ID              | UC1 (Aygül Anavatan)                                              |
-|-------------------------|-------------------------------------------------------------------|
+|:------------------------|:------------------------------------------------------------------|
 | **Senaryo Adı**         | Ödeme Sayfası Görüntüleme                                         |
 | **Ana Aktör**           | Kullanıcı                                                         |
 | **Ön Koşullar**         | Kullanıcı sisteme kayıtlıdır, giriş yapmış ve sepette en az bir ürün bulunmalıdır |
@@ -11,7 +11,7 @@
 
 
 | Senaryo ID              | UC2 (Aygül Anavatan)                                              |
-|-------------------------|-------------------------------------------------------------------|
+|:------------------------|:------------------------------------------------------------------|
 | **Senaryo Adı**         | Ürün Güncelleme                                                   |
 | **Ana Aktör**           | Yönetici, Satıcı                                                  |
 | **Ön Koşullar**         | Yönetici/Satıcı sisteme giriş yapmıştır, ürün sistemde tanımlıdır. |
@@ -21,7 +21,7 @@
 
 
 | Senaryo ID              | UC3 (Aygül Anavatan)                                              |
-|-------------------------|-------------------------------------------------------------------|
+|:------------------------|:------------------------------------------------------------------|
 | **Senaryo Adı**         | Kargo Takip Numarası Ekleme                                       |
 | **Ana Aktör**           | Satıcı                                                            |
 | **Ön Koşullar**         | Sipariş oluşturulmuş, Satıcı giriş yapmıştır                      |
@@ -32,7 +32,7 @@
 
 
 | Senaryo ID              | UC4 (Aygül Anavatan)                                              |
-|-------------------------|-------------------------------------------------------------------|
+|:------------------------|:------------------------------------------------------------------|
 | **Senaryo Adı**         | Sipariş Durumu Görüntüleme                                        |
 | **Ana Aktör**           | Kullanıcı                                                         |
 | **Ön Koşullar**         | Kullanıcı giriş yapmış olmalıdır                                 |
@@ -42,7 +42,7 @@
 
 
 | Senaryo ID              | UC5 (Aygül Anavatan)                                              |
-|-------------------------|-------------------------------------------------------------------|
+|:------------------------|:------------------------------------------------------------------|
 | **Senaryo Adı**         | Satıcı Mesaj Paneli Görüntüleme                                   |
 | **Ana Aktör**           | Satıcı                                                            |
 | **Ön Koşullar**         | Satıcı sisteme giriş yapmış olmalıdır                             |
@@ -52,7 +52,7 @@
 
 
 | Senaryo ID              | UC6 (Aygül Anavatan)                                              |
-|-------------------------|-----------------------------------------------------------------------|
+|:------------------------|:------------------------------------------------------------------|
 | **Senaryo Adı**         | Sipariş Raporlarını Görüntüleme                                    |
 | **Ana Aktör**           | Yönetici                                                           |
 | **Ön Koşullar**         | Yönetici sisteme giriş yapmış olmalıdır.                           |
