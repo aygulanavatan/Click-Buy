@@ -1,9 +1,6 @@
-## Kullanıcı Senaryoları
+## Durum Senaryoları
 
-### Senaryo ID: UC1 (Aygül Anavatan)
-
-| Başlık                  | Açıklama                                                          |
-|-------------------------|-------------------------------------------------------------------|
+| **Senaryo ID**          | UC1 (Aygül Anavatan)                                              |
 | **Senaryo Adı**         | Ödeme Sayfası Görüntüleme                                         |
 | **Ana Aktör**           | Kullanıcı                                                         |
 | **Ön Koşullar**         | Kullanıcı sisteme kayıtlıdır, giriş yapmış ve sepette en az bir ürün bulunmalıdır |
