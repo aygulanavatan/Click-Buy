@@ -1,5 +1,5 @@
 
-[Müge Tuğ Durum Senaryosu](./muge-tug-Senaryolar.md)
+[Müge Tuğ Durum Senaryosu](./Müge-Tug-Senaryolar.md)
 
 [Aygül Anavatan Durum Senaryosu](./aygul-anavatan-Senaryolar.md)
 
