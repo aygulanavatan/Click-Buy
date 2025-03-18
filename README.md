@@ -29,7 +29,7 @@ Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşıla
 
 [ Durum Diyagramı](/durum-diyagrami.md) 
 
-[ Durum Senaryoları](docs/durum-senaryolari.md)  
+[ Durum Senaryoları](/durum-senaryolari.md)  
 
 [ Front-End](docs/baslangic-asamasi.md)  
 
