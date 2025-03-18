@@ -1,2 +1,3 @@
-[📄 PDF'yi Görüntüle](https://github.com/aygulanavatan/Click-Buy/raw/main/Melek%20Y%C4%B1lmaz%20Durum%20Senaryolar%C4%B1.pdf)
+[📄 PDF'yi Görüntüle](https://aygulanavatan.github.io/Click-Buy/Melek%20Yılmaz%20Durum%20Senaryoları.pdf)
+
 
