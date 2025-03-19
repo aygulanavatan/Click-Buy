@@ -1,5 +1,5 @@
 ## Aygül Anavatan (Sipariş & Ödeme İşlemleri)
-## 1) Ödeme Sayfası Görüntüleme
+## 1) Ödeme Yapma
 Kullanıcıların satın alma işlemlerini tamamlaması için erişebileceği ödeme ekranıdır. Bu sayfa, siparişin toplam tutarını, ürün detaylarını ve ödeme seçeneklerini içerir. Kullanıcılar, kredi kartı, banka havalesi veya dijital cüzdan gibi farklı ödeme yöntemlerini kullanarak işlemlerini güvenli bir şekilde gerçekleştirebilir. Ayrıca, ödeme işlemi sırasında fatura bilgileri görüntülenir ve onay süreci tamamlanır. Sayfa, SSL ve 3D Secure gibi güvenlik önlemleriyle desteklenerek kullanıcı bilgilerinin korunmasını sağlar.
 
 ---
