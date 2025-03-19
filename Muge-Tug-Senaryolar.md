@@ -1,2 +1,3 @@
-https://drive.google.com/file/d/1RlxFXWX_z_m8cDMv2rYpJIGTt9Lw92DH/view?usp=drive_link
+[📄 Mügetuğ Durum Senaryosu PDF'yi İndir](https://github.com/aygulanavatan/Click-Buy/raw/main/m%C3%BCgetug%20durum%20senaryosu.pdf)
+
 
