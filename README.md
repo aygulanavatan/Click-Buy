@@ -27,7 +27,7 @@ Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşıla
 
 [ Gereksinim Analizi](gereksinim-analizi.md)
 
-[ Durum Diyagramı](/durum-diyagrami.md) 
+[ Durum Diyagramı](/durum-diyagramı.md) 
 
 [ Durum Senaryoları](/durum-senaryolari.md)  
 
