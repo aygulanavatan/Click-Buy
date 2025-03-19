@@ -5,7 +5,7 @@
 4) Kullanıcı bilgilerini düzenleme (Müge Tuğ)
 5) Şifre sıfırlama (Müge Tuğ)
 6) Kullanıcı giriş yap (Müge Tuğ)
-7) Ödeme sayfası görüntüleme (Aygül Anavatan)
+7) Ödeme yapma (Aygül Anavatan)
 8) Ürün güncelleme (Aygül Anavatan)
 9) Kargo takip numarası ekleme (Aygül Anavatan)
 10) Sipariş durumu görüntüleme (Aygül Anavatan)
