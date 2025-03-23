@@ -3,6 +3,9 @@
 
 [Aygül Anavatan Durum Senaryosu]([./Aygul-Anavatan-Senaryolar.md](https://github.com/user-attachments/files/19408604/kullanim.senaryolari_Aygul.Anavatan.pdf))
 
+[Aygül Anavatan Durum Senaryosu](https://github.com/aygulanavatan/Click-Buy/raw/main/docs/kullanim.senaryolari_Aygul.Anavatan.pdf)
+
+
 [Melek Yılmaz Durum Senaryosu](./Melek-Yilmaz-Senaryolar.md)
 
 [Sevcan Sarıkaya Durum Senaryosu](./Sevcan-Sarikaya-Senaryolar.md)
