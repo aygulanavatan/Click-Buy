@@ -11,3 +11,4 @@
 *6.Ürün Paneli Oluşturma* –Kullanıcılar, e-ticaret sitesinde mevcut tüm ürünleri bir arada görüntüleyebileceği bir ürün paneline erişebilir. Bu panel, kullanıcıların ürünleri kolayca karşılaştırmasına ve liste halinde görmesine olanak tanır. Ürün panelinde, ürünlerin adı, fiyatı, stok durumu ve küçük bir görseli yer alır.
 
 Test
+test123
