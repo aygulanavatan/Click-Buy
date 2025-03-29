@@ -12,4 +12,3 @@
 
 **6.Kullanıcı Giriş Yapma**:Kullanıcı, sisteme daha önce kaydolduktan sonra giriş yapabilmek için e-posta adresi ve şifresini kullanarak oturum açar. Kullanıcı, "Giriş Yap" butonuna tıklayarak e-posta ve şifre bilgilerini girer. Sistem, kullanıcının kimlik bilgilerini doğrular. Eğer bilgiler doğruysa, kullanıcı sisteme giriş yapar ve kişisel ana sayfasına yönlendirilir. Eğer kullanıcı, yanlış e-posta adresi veya şifre girerse, sistem hata mesajı gösterir ve tekrar denemesi istenir. Ayrıca, kullanıcı giriş yaparken "Beni Hatırla" seçeneği kullanarak bir sonraki girişte kullanıcı bilgileri otomatik olarak doldurulabilir.
 
-test
