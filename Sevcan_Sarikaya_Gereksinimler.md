@@ -9,3 +9,5 @@
 *5.Kampanya Paneli Oluşturma* – Yönetici (admin) kullanıcıları, sistem üzerinden belirli kampanyalar oluşturabilir. Kampanya paneli, indirimler, özel teklifler ve promosyon kodları gibi avantajların yönetilmesini sağlar. Yönetici, kampanya süresini, indirim yüzdesini ve hangi ürünlerin kampanyaya dahil olduğunu belirleyebilir. Kullanıcılar ise ana sayfada veya ürün detaylarında kampanyalı ürünleri görebilirler.
 
 *6.Ürün Paneli Oluşturma* –Kullanıcılar, e-ticaret sitesinde mevcut tüm ürünleri bir arada görüntüleyebileceği bir ürün paneline erişebilir. Bu panel, kullanıcıların ürünleri kolayca karşılaştırmasına ve liste halinde görmesine olanak tanır. Ürün panelinde, ürünlerin adı, fiyatı, stok durumu ve küçük bir görseli yer alır.
+
+Test
