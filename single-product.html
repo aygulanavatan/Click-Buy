@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!--! Boostrap Icons CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+<!--! header start  -->
+    <header>
+      <div class="global-notification">
+        <div class="container">
+          <p>
+            TÜM ÜRÜNLER İÇİN YAZ İNDİRİMİ VE ÜCRETSİZ TESLİMAT - %70'E VARAN
+            İNDİRİM! ŞİMDİ
+            <a href="shop.html">ALIŞVERİŞ YAPIN</a>
+          </p>
+        </div>
+      </div>
+      <div class="header-row">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="header-mobile">
+              <i class="bi bi-list" id="btn-menu"></i>
+            </div>
+            <div class="header-left">
+              <a href="#" class="logo">LOGO</a>
+            </div>
+            <div class="header-center" id="sidebar">
+              <nav class="navigation">
+                <ul class="menu-list">
+                  <li class="menu-list-item">
+                    <a href="index.html" class="menu-link active">
+                      ANASAYFA
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <div class="menu-dropdown-wrapper">
+                      <ul class="menu-dropdown-content">
+                        <li>
+                          <a href="#">Home Clean</a>
+                        </li>
+                        <li>
+                          <a href="#">Home Collection</a>
+                        </li>
+                        <li>
+                          <a href="#">Home Minimal</a>
+                        </li>
+                        <li>
+                          <a href="#">Home Modern</a>
+                        </li>
+                        <li>
+                          <a href="#">Home Parallax</a>
+                        </li>
+                        <li>
+                          <a href="#">Home Strong</a>
+                        </li>
+                        <li>
+                          <a href="#">Home Style</a>
+                        </li>
+                        <li>
+                          <a href="#">Home Unique</a>
+                        </li>
+                        <li>
+                          <a href="#">Home RTL</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-list-item megamenu-wrapper">
+                    <a href="shop.html" class="menu-link">
+                      TÜM KATEGORİLER
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <div class="menu-dropdown-wrapper">
+                      <div class="menu-dropdown-megamenu">
+                        <div class="megamenu-links">
+                          <div class="megamenu-products">
+                            <h3 class="megamenu-products-title">Kadın</h3>
+                            <ul class="megamenu-menu-list">
+                              <li>
+                                <a href="#">Giyim</a>
+                              </li>
+                              <li>
+                                <a href="#">Ayakkabı</a>
+                              </li>
+                              <li>
+                                <a href="#">Aksesuar & Çanta</a>
+                              </li>
+                              <li>
+                                <a href="#">Çanta</a>
+                              </li>
+                              <li>
+                                <a href="#">İç Giyim</a>
+                              </li>
+                              <li>
+                                <a href="#">Kozmetik</a>
+                              </li>
+                              <li>
+                                <a href="#">Spor & Outdoor</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="megamenu-products">
+                            <h3 class="megamenu-products-title">Erkek</h3>
+                            <ul class="megamenu-menu-list">
+                              <li>
+                                <a href="#">Giyim</a>
+                              </li>
+                              <li>
+                                <a href="#">Ayakkabı</a>
+                              </li>
+                              <li>
+                                <a href="#">Kişisel Bakım</a>
+                              </li>
+                              <li>
+                                <a href="#">Çanta</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="megamenu-products">
+                            <h3 class="megamenu-products-title">
+                              Anne & Çocuk
+                            </h3>
+                            <ul class="megamenu-menu-list">
+                              <li>
+                                <a href="#">Bebek</a>
+                              </li>
+                              <li>
+                                <a href="#">Kız Çocuk</a>
+                              </li>
+                              <li>
+                                <a href="#">Erkek Çocuk</a>
+                              </li>
+                              <li>
+                                <a href="#">Bebek Bakım</a>
+                              </li>
+                              <li>
+                                <a href="#">Oyuncak</a>
+                              </li>
+                              <li>
+                                <a href="#">Beslenme-Emzirme</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="megamenu-single">
+                          <a href="#">
+                            <img src="img/mega-menu.jpg" alt="" width="300"/>
+                          </a>
+                          <h3 class="megamenu-single-title">Elite Üye Olun</h3>
+                          <h4 class="megamenu-single-subtitle">
+                            Birçok Ayrıcalıktan Yararlanın
+                          </h4>
+                          <a href="#" class="megamenu-single-button btn btn-sm"
+                            >Alışveriş Yapın</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                    <a href="contact.html" class="menu-link"> İLETİŞİM </a>
+                  </li>
+                </ul>
+              </nav>
+              <i class="bi-x-circle" id="close-sidebar"></i>
+            </div>
+            <div class="header-right">
+              <div class="header-right-links">
+                <a href="#" class="header-account">
+                  <i class="bi bi-person"></i>
+                </a>
+                <button class="search-button">
+                  <i class="bi bi-search"></i>
+                </button>
+                <a href="#">
+                  <i class="bi bi-heart"></i>
+                </a>
+                <div class="header-cart">
+                  <a href="#" class="header-cart-link">
+                    <i class="bi bi-bag"></i>
+                    <span class="header-cart-count">0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--! header end  -->
+
+   <!--! modal search start  -->
+    <div class="modal-search">
+      <div class="modal-wrapper">
+        <h3 class="modal-title">Ürün Arama</h3>
+        <p class="modal-text">
+          Aradığınız ürün, kategori veya markayı yazınız.
+        </p>
+        <form class="search-form">
+          <input type="text" placeholder="Ürün, Kategori veya Marka" />
+          <button>
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+        <div class="search-results">
+          <div class="search-heading">
+            <h3>ARAMA SONUÇLARI</h3>
+          </div>
+          <div class="results">
+            <a href="#" class="result-item">
+              <img
+                src="img/products/product1/1.png"
+                class="search-thumb"
+                alt=""
+              />
+              <div class="search-info">
+                <h4>Zara Kadın Ceket - Gri</h4>
+                <span class="search-sku">Ürün Kodu: PD0016</span>
+                <span class="search-price">1080.00 TL</span>
+              </div>
+            </a>
+            <a href="#" class="result-item">
+              <img
+                src="img/products/product2/1.png"
+                class="search-thumb"
+                alt=""
+              />
+              <div class="search-info">
+                <h4>Colin's Erkek Ceket - Kırmızı</h4>
+                <span class="search-sku">Ürün Kodu: PD0016</span>
+                <span class="search-price">899.00 TL</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <i class="bi bi-x-circle" id="close-search"></i>
+      </div>
+    </div>
+    <!--! modal search end  -->
+
+
+    <!--! single product start  -->
+    <section class="single-product">
+        <div class="container">
+            <div class="single-product-wrapper">
+                <!-- breadcrumb start -->
+                <div class="single-topbar">
+                    <nav class="breadcrumb">
+                        <ul>
+                            <li><a href="#">Anasayfa</a></li>
+                            <li><a href="#">Erkek</a></li>
+                            <li><a href="#">Giyim</a></li>
+                            <li>Elastik Paçalı Eşofman Altı</li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- breadcrumb end -->
+
+                <!-- site main start -->
+                <div class="single-content">
+                    <main class="site-main">
+                        <div class="product-gallery">
+                            <div class="single-image-wrapper">
+                                <img src="img/products/product2/1.png" alt="">
+                            </div>
+                            <div class="product-thumb">
+                                <ol class="gallery-thumbs">
+                                    <li>
+                                        <img src="img/products/product2/1.png" alt="" class="img-fluid active">
+                                    </li>
+                                    <li>
+                                        <img src="img/products/product2/2.png" alt="" class="img-fluid">
+                                    </li>
+                                    <li>
+                                        <img src="img/products/product2/3.png" alt="" class="img-fluid">
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h1 class="product-title">
+                                Ceket
+                            </h1>
+                            <div class="product-review">
+                                <ul class="product-star">
+                                    <li><i class="bi bi-star-fill"></i></li>
+                                    <li><i class="bi bi-star-fill"></i></li>
+                                    <li><i class="bi bi-star-fill"></i></li>
+                                    <li><i class="bi bi-star-fill"></i></li>
+                                    <li><i class="bi bi-star-half"></i></li>
+                                </ul>
+                                <span>2 yorumlar</span>
+                            </div>
+                            <div class="product-price">
+                                <s>899.00 TL</s>
+                                <strong>1798.00 TL</strong>
+                            </div>
+                            <p class="product-description">
+                                Düz kesim, %100 pamuk
+                            </p>
+                            <form class="variations-form">
+                                <div class="variations">
+                                    <div class="colors">
+                                        <div class="colors-label">
+                                            <span>Color</span>
+                                        </div>
+                                        <div class="colors-wrapper">
+                                            <div class="color-wrapper">
+                                                <label class="blue-color">
+                                                    <input type="radio" name="product-color">
+                                                </label>
+                                            </div>
+                                            <div class="color-wrapper">
+                                                <label class="red-color">
+                                                    <input type="radio" name="product-color">
+                                                </label>
+                                            </div>
+                                            <div class="color-wrapper active">
+                                                <label class="green-color">
+                                                    <input type="radio" name="product-color">
+                                                </label>
+                                            </div>
+                                            <div class="color-wrapper">
+                                                <label class="purple-color">
+                                                    <input type="radio" name="product-color">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="values-label">
+                                            <span>Beden</span>
+                                        </div>
+                                        <div class="values-list">
+                                            <span class="active">XS</span>
+                                            <span>S</span>
+                                            <span>M</span>
+                                            <span>L</span>
+                                            <span>XL</span>
+                                        </div>
+                                    </div>
+                                    <div class="cart-button">
+                                        <input type="number" value="1" min="1">
+                                        <button class="btn btn-lg btn-primary">Sepete Ekle</button>
+                                    </div>
+                                    <div class="product-extra-buttons">
+                                        <a href="#">
+                                            <i class="bi bi-globe"></i>
+                                            <span>Beden Tablosu</span>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-heart"></i>
+                                            <span>Favorilere Ekle</span>
+                                        </a>
+                                        <a href="#">
+                                            <i class="bi bi-share"></i>
+                                            <span>Bu Ürünü Paylaş</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="divider"></div>
+                            <div class="product-meta">
+                                <div class="product-sku">
+                                    <span>SKU:</span>
+                                    <strong>BE45VGRT</strong>
+                                </div>
+                                <div class="product-categories">
+                                    <span>Kategori:</span>
+                                    <strong>Pantolon , Kadın</strong>
+                                </div>
+                                <div class="product-tags">
+                                    <span>Etiketler:</span>
+                                    <a href="#">siyah</a>
+                                    ,
+                                    <a href="#">beyaz</a>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <!-- site main end -->
+
+                <!-- tabs start -->
+                <div class="single-tabs">
+                    <ul class="tab-list">
+                        <li>
+                            <a href="#" class="tab-button active">Tanım</a>
+                        </li>
+                        <li>
+                            <a href="#" class="tab-button">
+                               Ek Bilgi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tab-button">
+                                Yorumlar
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-panel">
+                        <div class="tab-panel-descriptions">
+                            <p>Kalıbı tam oturuyor, hem ofiste hem günlük kullanımda rahatlıkla giyiyorum. Kumaşı kaliteli, tavsiye ederim!</p>
+                            <br>
+                            <p>Boyum kısa olmasına rağmen paça boyu tam oldu. Kesimi çok zarif, kumaşı da dökümlü. Çok şık duruyor!</p>
+                        </div>
+                        <div class="tab-panel-information">
+                            <h3>Ek Bilgi</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Renk</th>
+                                        <td>
+                                            <p>
+                                                Kırmızı, Mavi, Turuncu, Açık Mavi, Yeşil, Pembe, Siyah, Beyaz</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Beden</th>
+                                        <td>
+                                            <p>
+                                                XXS, XS, S, M, L, XL, XXL</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-panel-reviews">
+                            <h3>Elastik Paçalı Eşofman Altı için 2 inceleme </h3>
+                            <div class="comments">
+                                <ol class="comment-list">
+                                    <li class="comment-item">
+                                        <div class="comment-avatar">
+                                            <img src="img/avatars/avatar1.jpg" alt="">
+                                        </div>
+                                        <div class="comment-text">
+                                            <ul class="comment-star">
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                            </ul>
+                                            <div class="comment-meta">
+                                                <strong>admin</strong>
+                                                <span>-</span>
+                                                <time>April 7, 2024</time>
+                                            </div>
+                                            <div class="comment-description">
+                                                <p>Renk canlılığı harika. Üç yıkamadır kullanıyorum, hiçbir solma olmadı. Kaliteli dikiş ve rahat kesim.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="comment-item">
+                                        <div class="comment-avatar">
+                                            <img src="img/avatars/avatar1.jpg" alt="">
+                                        </div>
+                                        <div class="comment-text">
+                                            <ul class="comment-star">
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </li>
+                                            </ul>
+                                            <div class="comment-meta">
+                                                <strong>admin</strong>
+                                                <span>-</span>
+                                                <time>April 23, 2022</time>
+                                            </div>
+                                            <div class="comment-description">
+                                                <p>Tam bedeninizi alabilirsiniz, ne bol ne dar. Yüksek bel oluşu göbeği toparlıyor, çok memnun kaldım.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                            <!-- comment form start -->
+                            <div class="review-form-wrapper">
+                                <h2>Yorum Ekle</h2>
+                                <form class="comment-form">
+                                    <p class="comment-notes">
+                                        E-posta adresiniz yayınlanmayacak. Gerekli alanlar işaretlenmiştir.
+                                        <span class="required">*</span>
+                                    </p>
+                                    <div class="comment-form-rating">
+                                        <label>
+                                            Puanınız
+                                            <span class="required">*</span>
+                                        </label>
+                                        <div class="stars">
+                                            <a href="#" class="star">
+                                                <i class="bi bi-star-fill"></i>
+                                            </a>
+                                            <a href="#" class="star">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </a>
+                                            <a href="#" class="star">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </a>
+                                            <a href="#" class="star">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </a>
+                                            <a href="#" class="star">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="comment-form-comment form-comment">
+                                        <label for="comment">
+                                            Yorumunuz
+                                            <span class="required">*</span>
+                                        </label>
+                                        <textarea id="comment" cols="50" rows="10"></textarea>
+                                    </div>
+                                    <div class="comment-form-author form-comment">
+                                        <label for="name">
+                                            İsim
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input id="name" type="text">
+                                    </div>
+                                    <div class="comment-form-email form-comment">
+                                        <label for="email">
+                                            E-posta
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input id="email" type="email">
+                                    </div>
+                                    <div class="comment-form-cookies">
+                                        <input id="cookies" type="checkbox">
+                                        <label for="cookies">
+                                            İsmimi, e-postamı ve web sitemi bir sonraki yorum için bu tarayıcıya kaydet.
+                                            <span class="required">*</span>
+                                        </label>
+
+                                    </div>
+                                    <div class="form-submit">
+                                        <input type="submit" class="btn submit">
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- comment form end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs end -->
+            </div>
+        </div>
+    </section>
+    <!--! single product end  -->
+
+    <!--! campaign single start  -->
+    <section class="campaign-single">
+        <div class="container">
+            <div class="campaign-wrapper">
+                <h2>Yeni Sezon Satış</h2>
+                <strong>%40 İNDİRİM</strong>
+                <span></span>
+                <a href="#" class="btn btn-lg">
+                    HEMEN AL
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--! campaign single end  -->
+
+  <!--! policy start  -->
+    <section class="policy">
+      <div class="container">
+        <ul class="policy-list">
+          <li class="policy-item">
+            <i class="bi bi-truck"></i>
+            <div class="policy-texts">
+              <strong>ÜCRETSİZ TESLİMAT</strong>
+              <span>300.00 TL ve üzeri alışverişlerde geçerli</span>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-headset"></i>
+            <div class="policy-texts">
+              <strong>7/24 DESTEK</strong>
+              <span>24 saat çevrimiçi</span>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-arrow-clockwise"></i>
+            <div class="policy-texts">
+              <strong> 15 GÜN İÇİNDE İADE</strong>
+              <span>15 gün içinde koşulsuz iade garantisi</span>
+            </div>
+          </li>
+          <li class="policy-item">
+            <i class="bi bi-credit-card"></i>
+            <div class="policy-texts">
+              <strong> ÖDEME YÖNTEMİ</strong>
+              <span>Güvenli Ödeme</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--! policy end  -->
+
+<!--! footer start  -->
+    <footer class="footer">
+      <div class="subscribe-row">
+        <div class="container">
+          <div class="footer-row-wrapper">
+            <div class="footer-subscribe-wrapper">
+              <div class="footer-subscribe">
+                <div class="footer-subscribe-top">
+                  <h3 class="subscribe-title">
+                    Yeni ürünler, indirimler ve daha fazlası hakkında bilgi
+                    almak için e-posta abonesi olun.
+                  </h3>
+                  <p class="subscribe-desc">
+                    İlk 500 TL ve üzeri siparişinizde 50 TL indirim sağlayan bir
+                    kuponu e-postayla size göndereceğiz.
+                  </p>
+                </div>
+                <div class="footer-subscribe-bottom">
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="E-posta adresinizi giriniz."
+                    />
+                    <button class="btn">Abone Ol</button>
+                  </form>
+                  <p class="privacy-text">
+                    Abone olarak Şartlar & Koşullarımızı ve
+                    <a href="#"
+                      >Gizlilik & Çerez Politikamızı kabul etmiş olursunuz.
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-contact-wrapper">
+              <div class="footer-contact-top">
+                <h3 class="contact-title">
+                  Yardıma mı ihtiyacınız var? <br />
+                  (+90) 123 45 67
+                </h3>
+                <p class="contact-desc">08:00 - 19:00 arası hizmetinizdeyiz.</p>
+              </div>
+              <div class="footer-contact-bottom">
+                <div class="download-app">
+                  <a href="#">
+                    <img src="img/footer/app-store.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/footer/google-play.png" alt="" />
+                  </a>
+                </div>
+                <p class="privacy-text">
+                  <strong>Alışveriş Uygulaması:</strong> Siparişlerinizi yönetin
+                  ve ödeme bilgilerini kaydedin.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="widgets-row">
+        <div class="container">
+          <div class="footer-widgets">
+            <div class="brand-info">
+              <div class="footer-logo">
+                <a href="#" class="logo">LOGO</a>
+              </div>
+              <div class="footer-desc">
+                <p>Keyifli bir alışveriş deneyimi için yanınızdayız.</p>
+              </div>
+              <div class="footer-contact">
+                <p>
+                  <a href="tel:555 555 55 55">(+90) 123 45 67</a> –
+                  <a href="mailto:info@example.com">info@click-buy.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Bilgi</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Hakkımızda</a>
+                </li>
+                <li>
+                  <a href="#">Gizlilik Politikası</a>
+                </li>
+                <li>
+                  <a href="#">İade Politikası</a>
+                </li>
+                <li>
+                  <a href="#">Kargo Politikası</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Hesabım</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Kontrol Paneli</a>
+                </li>
+                <li>
+                  <a href="#">Siparişlerim</a>
+                </li>
+                <li>
+                  <a href="#">Favorilerim</a>
+                </li>
+                <li>
+                  <a href="#">Hesap Detayları</a>
+                </li>
+                <li>
+                  <a href="#">Siparişlerimi Takip Et</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Alışveriş</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Marka</a>
+                </li>
+                <li>
+                  <a href="#">Çok Satanlar</a>
+                </li>
+                <li>
+                  <a href="#">Fırsat Ürünleri</a>
+                </li>
+                <li>
+                  <a href="#">En Yeniler</a>
+                </li>
+                <li>
+                  <a href="#">Satış Ürünleri</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Kategoriler</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Kadın</a>
+                </li>
+                <li>
+                  <a href="#">Erkek</a>
+                </li>
+                <li>
+                  <a href="#">Anne & Çocuk</a>
+                </li>
+                <li>
+                  <a href="#">Giyim</a>
+                </li>
+                <li>
+                  <a href="#">Ayakkabı</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-row">
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="site-copyright">
+              <p>Copyright 2024 © Click & Buy Theme. All right reserved.</p>
+            </div>
+            <a href="#">
+              <img src="img/footer/cards.png" alt="" />
+            </a>
+            <div class="footer-menu">
+              <ul class="footer-menu-list">
+                <li class="list-item">
+                  <a href="#">Gizlilik Politikası</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Şartlar ve Koşullar</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">İade Politikası</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--! footer end  -->
+</body>
+
+</html>
