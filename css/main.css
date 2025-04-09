@@ -85,3 +85,20 @@
     font-style: italic;
     margin-top: 10px; 
 }
+
+
+.sepete-ekle-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.urun {
+  width: 48%;
+  display: flex;
+  justify-content: center; 
+}
+
+.urun-resmi {
+  width: 300px;
+}

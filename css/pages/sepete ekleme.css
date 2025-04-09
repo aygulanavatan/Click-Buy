@@ -1,0 +1,59 @@
+.sepete-ekle-container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: sans-serif;
+    display: flex; /* Flexbox kullanarak ürünleri yan yana hizalar */
+    justify-content: space-between; /* Ürünler arasında eşit boşluk bırakır */
+    flex-wrap: wrap; /* Ürünler sığmadığında alt satıra geçer */
+}
+
+.urun {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%; /* İki ürünün yan yana sığması için genişlik ayarı */
+    text-align: center;
+}
+
+.urun-resmi {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.urun-adi {
+    margin-bottom: 5px;
+}
+
+.urun-boyu {
+    font-weight: bold;
+}
+
+.sepete-ekle-formu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+}
+
+.sepete-ekle-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sepete-ekle-btn:hover {
+    background-color: #3e8e41;
+}
