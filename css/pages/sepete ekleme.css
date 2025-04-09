@@ -2,16 +2,16 @@
     width: 80%;
     margin: 20px auto;
     font-family: sans-serif;
-    display: flex; /* Flexbox kullanarak ürünleri yan yana hizalar */
-    justify-content: space-between; /* Ürünler arasında eşit boşluk bırakır */
-    flex-wrap: wrap; /* Ürünler sığmadığında alt satıra geçer */
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
 .urun {
     border: 1px solid #ddd;
     padding: 20px;
     margin-bottom: 20px;
-    width: 48%; /* İki ürünün yan yana sığması için genişlik ayarı */
+    width: 48%; 
     text-align: center;
 }
 
