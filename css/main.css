@@ -27,3 +27,61 @@
 @import url(pages/single-product.css);
 @import url(pages/blog.css);
 @import url(pages/single-blog.css);
+
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+  }
+  
+  .product-card {
+    
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .favorites-grid {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+  .yorumlar-container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.urun-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.yorum {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 30%; 
+    text-align: center; 
+  }
+
+.yorum-urun-resim {
+
+        width: 200px;
+        height: auto; 
+        object-fit: contain;
+        margin-bottom: 10px;
+   
+}
+
+.yorum h3 {
+    margin-bottom: 5px; 
+}
+
+.yorum-yazar {
+    font-style: italic;
+    margin-top: 10px; 
+}
