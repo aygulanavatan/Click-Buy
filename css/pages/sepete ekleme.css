@@ -2,17 +2,24 @@
     width: 80%;
     margin: 20px auto;
     font-family: sans-serif;
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
+    display: flex;
+    justify-content: flex-start; /* Öğeleri sola yaslar */
+    flex-wrap: wrap; /* Sığmayan öğeleri alt satıra geçirir */
 }
 
 .urun {
     border: 1px solid #ddd;
     padding: 20px;
     margin-bottom: 20px;
-    width: 48%; 
+    width: calc(50% - 20px); /* İki ürün yan yana ve aralarında boşluk */
+    margin-right: 20px; /* Ürünler arasında sağ boşluk */
     text-align: center;
+    box-sizing: border-box; /* Padding ve border'ın genişliğe dahil olmasını sağlar */
+}
+
+/* İkinci ve sonraki çift sıradaki ürünlerin sağ boşluğunu kaldırır */
+.urun:nth-child(even) {
+    margin-right: 0;
 }
 
 .urun-resmi {
@@ -56,4 +63,20 @@ input[type="number"] {
 
 .sepete-ekle-btn:hover {
     background-color: #3e8e41;
+}
+
+/* Ekran genişliği 768px'den küçükse (örneğin tabletler için) tek sütun yap */
+@media (max-width: 768px) {
+    .urun {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+}
+
+/* Ekran genişliği 480px'den küçükse (örneğin telefonlar için) de tek sütun yap */
+@media (max-width: 480px) {
+    .urun {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
 }
