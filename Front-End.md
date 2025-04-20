@@ -15,15 +15,16 @@ index.html -> admin-login.html -> admin-panel.html -> siparis-management.html
 siparis-management.css ve siparis-management.js
 
 4) Sipariş Durumu Görüntüleme  
-index.html -> admin-login.html -> admin-panel.html -> siparis-management.html (Gereksinim 3 ile aynı sayfada)  
+index.html -> admin-login.html -> admin-panel.html -> siparis-management.html  
 siparis-management.css ve siparis-management.js
+(Gereksinim 3 ile aynı sayfada) 
 
-5) Satıcı Mesaj Paneli Görüntüleme  
+6) Satıcı Mesaj Paneli Görüntüleme  
 index.html -> admin-login.html -> admin-panel.html -> mesaj-panel.html  
 mesaj-panel.css ve mesaj-panel.js
 
-6) Sipariş Raporlarını Görüntüleme  
-index.html -> admin-login.html -> admin-panel.html -> rapor.html
+7) Sipariş Raporlarını Görüntüleme  
+index.html -> admin-login.html -> admin-panel.html -> rapor.html  
 rapor.css ve rapor.js
 
 
