@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Ürün Güncelleme</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f5f5f5;
+      }
+      h3 {
+        color: #333;
+      }
+      form {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #1367ef;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0e52c1;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="edit-product-form">
+      <h3>Ürün Güncelleme</h3>
+      <label for="product-id">Ürün ID:</label>
+      <input type="text" id="product-id" required />
+
+      <label for="product-name">Ürün Adı:</label>
+      <input type="text" id="product-name" required />
+
+      <label for="product-description">Açıklama:</label>
+      <textarea id="product-description" rows="4"></textarea>
+
+      <label for="product-price">Fiyat:</label>
+      <input type="number" id="product-price" required />
+
+      <label for="product-stock">Stok:</label>
+      <input type="number" id="product-stock" required />
+
+      <label for="product-category">Kategori:</label>
+      <input type="text" id="product-category" />
+
+      <label for="product-image">Ürün Görseli:</label>
+      <input type="file" id="product-image" />
+
+      <button type="submit">Güncelle</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("edit-product-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const updatedProduct = {
+            id: document.getElementById("product-id").value,
+            name: document.getElementById("product-name").value,
+            description: document.getElementById("product-description").value,
+            price: parseFloat(document.getElementById("product-price").value),
+            stock: parseInt(document.getElementById("product-stock").value),
+            category: document.getElementById("product-category").value,
+            image:
+              document.getElementById("product-image").files[0]?.name ||
+              "mevcut.png",
+          };
+
+          console.log("Güncellenen ürün:", updatedProduct);
+          alert("Ürün başarıyla güncellendi!");
+        });
+    </script>
+  </body>
+</html>

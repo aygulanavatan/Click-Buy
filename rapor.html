@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sipariş Raporları</title>
+    <link rel="stylesheet" href="css/rapor.css" />
+  </head>
+  <body>
+    <div class="report-container">
+      <h2>Sipariş Raporları</h2>
+      <div class="stats">
+        <div class="stat-box">
+          <h3>Toplam Sipariş</h3>
+          <span id="total-orders">0</span>
+        </div>
+        <div class="stat-box">
+          <h3>Toplam Satış (TL)</h3>
+          <span id="total-sales">0 TL</span>
+        </div>
+        <div class="stat-box">
+          <h3>En Çok Satılan Ürün</h3>
+          <span id="top-product">-</span>
+        </div>
+        <div class="stat-box">
+          <h3>İptal Edilen Sipariş</h3>
+          <span id="canceled-orders">0</span>
+        </div>
+      </div>
+
+<div class="table-section">
+  <h3>Sipariş Listesi</h3>
+  <table class="order-table">
+    <thead>
+      <tr>
+        <th>Sipariş No</th>
+        <th>Ürün</th>
+        <th>Miktar</th>
+        <th>Toplam</th>
+        <th>Durum</th>
+      </tr>
+    </thead>
+    <tbody id="report-table-body">
+      <!-- JS ile eklenecek -->
+    </tbody>
+  </table>
+</div>
+
+<h3>Ürünlere Göre Satış Miktarı Grafiği</h3>
+<img src="img/urunlere_gore_satis_miktari.png" alt="Satış Grafiği" style="max-width:50%; height:auto; border: 1px solid #ccc; border-radius: 8px; padding: 10px;" />
+
+
+    <script src="js/rapor.js"></script>
+  </body>
+</html>

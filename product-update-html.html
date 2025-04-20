@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Click &amp; Buy - Ürün Güncelleme</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/admin.css" rel="stylesheet" />
+    <link href="css/product-update.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--! header start  -->
+    <header>
+      <div class="global-notification">
+        <div class="container2">
+          <p>
+            YÖNETİCİ PANELİ - ÜRÜN GÜNCELLEME
+            <a href="index.html"> ANA SAYFAYA DÖN </a>
+          </p>
+        </div>
+      </div>
+      <div class="header-row">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="header-left">
+              <a class="logo" href="index.html"> CLICK & BUY </a>
+            </div>
+            <div class="header-right">
+              <div class="header-right-links">
+                <div class="admin-logout">
+                  <a href="#" id="logout-btn">
+                    <i class="bi bi-box-arrow-right"> </i>
+                    <span> Çıkış </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--! header end  -->
+    <!--! product update start  -->
+    <section class="product-update">
+      <div class="container">
+        <div class="admin-wrapper">
+          <div class="admin-sidebar">
+            <h3>Yönetici Menüsü</h3>
+            <ul class="admin-menu">
+              <li class="active">
+                <a href="admin-panel.html"> Ürün Yönetimi </a>
+              </li>
+              <li>
+                <a href="#"> Kategori Yönetimi </a>
+              </li>
+              <li>
+                <a href="#"> Sipariş Yönetimi </a>
+              </li>
+              <li>
+                <a href="#"> Kullanıcı Yönetimi </a>
+              </li>
+              <li>
+                <a href="#"> Site Ayarları </a>
+              </li>
+            </ul>
+          </div>
+          <div class="admin-content">
+            <div class="content-header">
+              <h2>Ürün Güncelleme</h2>
+              <a class="btn" href="admin-panel.html"> Listeye Dön </a>
+            </div>
+            <div class="update-form-container">
+              <form id="product-update-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="product-id"> Ürün ID </label>
+                    <input
+                      id="product-id"
+                      name="product-id"
+                      readonly=""
+                      type="text"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="product-name"> Ürün Adı </label>
+                    <input
+                      id="product-name"
+                      name="product-name"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="product-category"> Kategori </label>
+                    <select
+                      id="product-category"
+                      name="product-category"
+                      required=""
+                    >
+                      <option value="">Kategori Seçin</option>
+                      <option value="kadin-giyim">Kadın - Giyim</option>
+                      <option value="kadin-ayakkabi">Kadın - Ayakkabı</option>
+                      <option value="erkek-giyim">Erkek - Giyim</option>
+                      <option value="erkek-ayakkabi">Erkek - Ayakkabı</option>
+                      <option value="cocuk-giyim">Çocuk - Giyim</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="product-brand"> Marka </label>
+                    <input
+                      id="product-brand"
+                      name="product-brand"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="product-price"> Ürün Fiyatı (TL) </label>
+                    <input
+                      id="product-price"
+                      name="product-price"
+                      required=""
+                      step="0.01"
+                      type="number"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="product-discount"> İndirim Oranı (%) </label>
+                    <input
+                      id="product-discount"
+                      max="100"
+                      min="0"
+                      name="product-discount"
+                      type="number"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="product-stock"> Stok Adedi </label>
+                    <input
+                      id="product-stock"
+                      min="0"
+                      name="product-stock"
+                      required=""
+                      type="number"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="product-description"> Ürün Açıklaması </label>
+                  <textarea
+                    id="product-description"
+                    name="product-description"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label> Ürün Özellikleri </label>
+                  <div class="product-features" id="product-features">
+                    <div class="feature-item">
+                      <input
+                        name="feature-name[]"
+                        placeholder="Özellik Adı"
+                        type="text"
+                        value="Malzeme"
+                      />
+                      <input
+                        name="feature-value[]"
+                        placeholder="Özellik Değeri"
+                        type="text"
+                        value="Pamuk"
+                      />
+                      <button class="remove-feature" type="button">
+                        <i class="bi bi-x"> </i>
+                      </button>
+                    </div>
+                    <div class="feature-item">
+                      <input
+                        name="feature-name[]"
+                        placeholder="Özellik Adı"
+                        type="text"
+                        value="Renk"
+                      />
+                      <input
+                        name="feature-value[]"
+                        placeholder="Özellik Değeri"
+                        type="text"
+                        value="Gri"
+                      />
+                      <button class="remove-feature" type="button">
+                        <i class="bi bi-x"> </i>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="btn btn-sm" id="add-feature" type="button">
+                    Özellik Ekle
+                  </button>
+                </div>
+                <div class="form-group">
+                  <label> Ürün Görselleri </label>
+                  <div class="product-images" id="product-images">
+                    <div class="image-preview-container">
+                      <div class="image-preview">
+                        <img
+                          alt=""
+                          id="preview-image-1"
+                          src="img/products/product1/1.png"
+                        />
+                      </div>
+                      <div class="image-controls">
+                        <input
+                          accept="image/*"
+                          class="image-input"
+                          id="product-image-1"
+                          name="product-image-1"
+                          type="file"
+                        />
+                        <label class="btn btn-sm" for="product-image-1">
+                          Görsel Seç
+                        </label>
+                        <button
+                          class="btn btn-sm btn-danger remove-image"
+                          type="button"
+                        >
+                          <i class="bi bi-trash"> </i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="image-preview-container">
+                      <div class="image-preview">
+                        <img
+                          alt=""
+                          id="preview-image-2"
+                          src="img/products/product1/2.png"
+                        />
+                      </div>
+                      <div class="image-controls">
+                        <input
+                          accept="image/*"
+                          class="image-input"
+                          id="product-image-2"
+                          name="product-image-2"
+                          type="file"
+                        />
+                        <label class="btn btn-sm" for="product-image-2">
+                          Görsel Seç
+                        </label>
+                        <button
+                          class="btn btn-sm btn-danger remove-image"
+                          type="button"
+                        >
+                          <i class="bi bi-trash"> </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-sm" id="add-image" type="button">
+                    Görsel Ekle
+                  </button>
+                </div>
+                <div class="form-group">
+                  <label for="product-status"> Ürün Durumu </label>
+                  <div class="status-options">
+                    <label class="status-option">
+                      <input
+                        checked=""
+                        name="product-status"
+                        type="radio"
+                        value="active"
+                      />
+                      <span> Aktif </span>
+                    </label>
+                    <label class="status-option">
+                      <input
+                        name="product-status"
+                        type="radio"
+                        value="inactive"
+                      />
+                      <span> Pasif </span>
+                    </label>
+                    <label class="status-option">
+                      <input
+                        name="product-status"
+                        type="radio"
+                        value="featured"
+                      />
+                      <span> Öne Çıkan </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-primary btn-lg save-btn" type="submit">
+                    Değişiklikleri Kaydet
+                  </button>
+                  <button class="btn btn-lg cancel-btn" type="button">
+                    İptal
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! product update end  -->
+    <!--! footer start  -->
+    <footer class="footer">
+      <div class="copyright-row">
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="site-copyright">
+              <p>Copyright 2024 © Click &amp; Buy Theme. All right reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--! footer end  -->
+    <script src="js/product-update.js" type="module"></script>
+  </body>
+</html>

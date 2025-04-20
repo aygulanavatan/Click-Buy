@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesaj Paneli</title>
+    <link rel="stylesheet" href="css/mesaj-panel.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Mesaj Paneli</h2>
+
+      <!-- Gelen Mesajlar -->
+      <div class="section">
+        <h3>Gelen Mesajlar</h3>
+        <ul id="incoming-list" class="message-list">
+          <!-- JavaScript ile mesajlar buraya eklenecek -->
+        </ul>
+
+        <!-- Mesaj detay kutusu -->
+        <div id="message-detail" style="display: none; margin-top: 20px">
+          <h4>Mesaj Detayı</h4>
+          <p><strong>Gönderen:</strong> <span id="from"></span></p>
+          <p><strong>İçerik:</strong> <span id="message-content"></span></p>
+          <textarea
+            id="reply-message"
+            placeholder="Cevabınızı yazın..."
+          ></textarea>
+          <button id="send-reply">Cevap Gönder</button>
+        </div>
+      </div>
+      <!-- << BURASI EKSİKTİ -->
+
+      <!-- Yeni Mesaj Gönder -->
+      <div class="section">
+        <h3>Yeni Mesaj Gönder</h3>
+        <select id="recipient">
+          <option value="">Alıcı Seçin</option>
+          <option value="Müşteri1">Müşteri1</option>
+          <option value="Satıcı2">Satıcı2</option>
+        </select>
+        <textarea id="new-message" placeholder="Mesajınızı yazın..."></textarea>
+        <button id="send-new-message">Gönder</button>
+      </div>
+    </div>
+
+    <script src="js/mesaj-panel.js"></script>
+  </body>
+</html>

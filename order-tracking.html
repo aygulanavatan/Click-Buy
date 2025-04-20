@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="tr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Click &amp; Buy - Sipariş Takip
+  </title>
+  <!--! Boostrap Icons CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="css/main.css" rel="stylesheet"/>
+  <link href="css/order-tracking.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!--! header start  -->
+  <header>
+   <div class="global-notification">
+    <div class="container">
+     <p>
+      GÜVENLİ ALIŞVERİŞ &amp; HIZLI TESLİMAT - %100 MÜŞTERİ MEMNUNİYETİ
+      <a href="shop.html">
+       ALIŞVERİŞE DEVAM ET
+      </a>
+     </p>
+    </div>
+   </div>
+   <div class="header-row">
+    <div class="container">
+     <div class="header-wrapper">
+      <div class="header-mobile">
+       <i class="bi bi-list" id="btn-menu">
+       </i>
+      </div>
+      <div class="header-left">
+       <a class="logo" href="index.html">
+        LOGO
+       </a>
+      </div>
+      <div class="header-center" id="sidebar">
+       <nav class="navigation">
+        <ul class="menu-list">
+         <li class="menu-list-item">
+          <a class="menu-link" href="index.html">
+           ANASAYFA
+          </a>
+         </li>
+         <li class="menu-list-item">
+          <a class="menu-link" href="shop.html">
+           ALIŞVERİŞ
+          </a>
+         </li>
+         <li class="menu-list-item">
+          <a class="menu-link" href="contact.html">
+           İLETİŞİM
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <i class="bi-x-circle" id="close-sidebar">
+       </i>
+      </div>
+      <div class="header-right">
+       <div class="header-right-links">
+        <a class="header-account" href="admin-login.html" title="Yönetici Girişi">
+         <i class="bi bi-person">
+         </i>
+        </a>
+        <a href="favorites.html">
+         <i class="bi bi-heart">
+         </i>
+        </a>
+        <div class="header-cart">
+         <a class="header-cart-link" href="cart.html">
+          <i class="bi bi-bag">
+          </i>
+          <span class="header-cart-count">
+           0
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!--! header end  -->
+  <!--! order tracking start  -->
+  <section class="order-tracking">
+   <div class="container">
+    <div class="section-title">
+     <h2>
+      Sipariş Takibi
+     </h2>
+     <p>
+      Siparişinizin durumunu takip edin
+     </p>
+    </div>
+    <div class="tracking-wrapper">
+     <div class="tracking-search">
+      <form id="tracking-form">
+       <h3>
+        Sipariş Durumu Sorgulama
+       </h3>
+       <div class="form-row">
+        <div class="form-group">
+         <label for="order-number">
+          Sipariş Numarası
+         </label>
+         <input id="order-number" name="order-number" placeholder="SP-1234" required="" type="text"/>
+        </div>
+        <div class="form-group">
+         <label for="email">
+          E-posta Adresi
+         </label>
+         <input id="email" name="email" placeholder="E-posta adresinizi girin" required="" type="email"/>
+        </div>
+       </div>
+       <button class="btn btn-primary btn-tracking" type="submit">
+        Siparişi Sorgula
+       </button>
+      </form>
+     </div>
+     <div class="tracking-result" id="tracking-result" style="display: none;">
+      <div class="order-info">
+       <div class="order-header">
+        <h3 class="order-title">
+         Sipariş
+         <span id="display-order-number">
+          SP-1248
+         </span>
+        </h3>
+        <span class="order-date" id="order-date">
+         10 Nisan 2024
+        </span>
+       </div>
+       <div class="order-details">
+        <div class="detail-item">
+         <span class="detail-label">
+          Durum:
+         </span>
+         <span class="detail-value status-badge" id="order-status">
+          Kargoya Verildi
+         </span>
+        </div>
+        <div class="detail-item">
+         <span class="detail-label">
+          Kargo Firması:
+         </span>
+         <span class="detail-value" id="cargo-company">
+          Aras Kargo
+         </span>
+        </div>
+        <div class="detail-item">
+         <span class="detail-label">
+          Takip Numarası:
+         </span>
+         <span class="detail-value" id="tracking-number">
+          123456789
+         </span>
+         <button class="btn-copy-tracking" id="copy-tracking-btn">
+          <i class="bi bi-clipboard">
+          </i>
+          Kopyala
+         </button>
+        </div>
+        <div class="detail-item">
+         <span class="detail-label">
+          Tahmini Teslimat:
+         </span>
+         <span class="detail-value" id="estimated-delivery">
+          15 Nisan 2024
+         </span>
+        </div>
+       </div>
+       <div class="cargo-link">
+        <a class="btn btn-outline" href="#" id="cargo-tracking-link" target="_blank">
+         <i class="bi bi-box-seam">
+         </i>
+         Kargo Firması Sitesinde Takip Et
+        </a>
+       </div>
+      </div>
+      <div class="tracking-progress">
+       <h4>
+        Sipariş Durumu
+       </h4>
+       <div class="tracking-timeline">
+        <div class="timeline-step completed">
+         <div class="step-icon">
+          <i class="bi bi-check-circle-fill">
+          </i>
+         </div>
+         <div class="step-content">
+          <h5>
+           Sipariş Alındı
+          </h5>
+          <p>
+           10 Nisan 2024, 14:30
+          </p>
+          <span class="step-desc">
+           Siparişiniz başarıyla oluşturuldu.
+          </span>
+         </div>
+        </div>
+        <div class="timeline-step completed">
+         <div class="step-icon">
+          <i class="bi bi-check-circle-fill">
+          </i>
+         </div>
+         <div class="step-content">
+          <h5>
+           Ödeme Onaylandı
+          </h5>
+          <p>
+           10 Nisan 2024, 14:32
+          </p>
+          <span class="step-desc">
+           Ödemeniz başarıyla alındı ve onaylandı.
+          </span>
+         </div>
+        </div>
+        <div class="timeline-step completed">
+         <div class="step-icon">
+          <i class="bi bi-check-circle-fill">
+          </i>
+         </div>
+         <div class="step-content">
+          <h5>
+           Hazırlanıyor
+          </h5>
+          <p>
+           11 Nisan 2024, 10:15
+          </p>
+          <span class="step-desc">
+           Siparişiniz hazırlanıyor.
+          </span>
+         </div>
+        </div>
+        <div class="timeline-step active">
+         <div class="step-icon">
+          <i class="bi bi-truck">
+          </i>
+         </div>
+         <div class="step-content">
+          <h5>
+           Kargoya Verildi
+          </h5>
+          <p>
+           12 Nisan 2024, 15:45
+          </p>
+          <span class="step-desc">
+           Siparişiniz kargo firmasına teslim edildi.
+          </span>
+         </div>
+        </div>
+        <div class="timeline-step">
+         <div class="step-icon">
+          <i class="bi bi-geo-alt">
+          </i>
+         </div>
+         <div class="step-content">
+          <h5>
+           Yolda
+          </h5>
+          <p>
+           -
+          </p>
+          <span class="step-desc">
+           Siparişiniz teslimat adresinize doğru yolda.
+          </span>
+         </div>
+        </div>
+        <div class="timeline-step">
+         <div class="step-icon">
+          <i class="bi bi-house-door">
+          </i>
+         </div>
+         <div class="step-content">
+          <h5>
+           Teslim Edildi
+          </h5>
+          <p>
+           -
+          </p>
+          <span class="step-desc">
+           Siparişiniz teslim edildi.
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="order-items">
+       <h4>
+        Sipariş Ürünleri
+       </h4>
+       <div class="item-list">
+        <div class="order-item">
+         <div class="item-image">
+          <img alt="Zara Kadın Ceket - Gri" src="img/products/product1/1.png"/>
+         </div>
+         <div class="item-details">
+          <h5 class="item-title">
+           Zara Kadın Ceket - Gri
+          </h5>
+          <div class="item-properties">
+           <span class="item-size">
+            Beden: M
+           </span>
+           <span class="item-color">
+            Renk: Gri
+           </span>
+           <span class="item-quantity">
+            Adet: 1
+           </span>
+          </div>
+         </div>
+         <div class="item-price">
+          1.080,00 TL
+         </div>
+        </div>
+        <div class="order-item">
+         <div class="item-image">
+          <img alt="Colin's Erkek Ceket - Kırmızı" src="img/products/product2/1.png"/>
+         </div>
+         <div class="item-details">
+          <h5 class="item-title">
+           Colin's Erkek Ceket - Kırmızı
+          </h5>
+          <div class="item-properties">
+           <span class="item-size">
+            Beden: L
+           </span>
+           <span class="item-color">
+            Renk: Kırmızı
+           </span>
+           <span class="item-quantity">
+            Adet: 1
+           </span>
+          </div>
+         </div>
+         <div class="item-price">
+          899,00 TL
+         </div>
+        </div>
+       </div>
+       <div class="order-summary">
+        <div class="summary-row">
+         <span class="summary-label">
+          Ara Toplam:
+         </span>
+         <span class="summary-value">
+          1.979,00 TL
+         </span>
+        </div>
+        <div class="summary-row">
+         <span class="summary-label">
+          Kargo:
+         </span>
+         <span class="summary-value free">
+          Ücretsiz
+         </span>
+        </div>
+        <div class="summary-row total">
+         <span class="summary-label">
+          Toplam:
+         </span>
+         <span class="summary-value">
+          1.979,00 TL
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="shipping-address">
+       <h4>
+        Teslimat Adresi
+       </h4>
+       <div class="address-details">
+        <p>
+         <strong>
+          Ali Yılmaz
+         </strong>
+        </p>
+        <p>
+         Atatürk Mah. Gazi Cad. No: 123 Daire: 4
+        </p>
+        <p>
+         Şişli / İstanbul
+        </p>
+        <p>
+         Telefon: (0532) 123 45 67
+        </p>
+       </div>
+      </div>
+      <div class="tracking-actions">
+       <a class="btn btn-outline" href="index.html">
+        <i class="bi bi-arrow-left">
+        </i>
+        Alışverişe Devam Et
+       </a>
+       <a class="btn btn-primary" href="#" id="download-invoice">
+        <i class="bi bi-file-earmark-text">
+        </i>
+        Faturayı İndir
+       </a>
+      </div>
+     </div>
+     <div class="tracking-not-found" id="tracking-not-found" style="display: none;">
+      <div class="not-found-icon">
+       <i class="bi bi-exclamation-circle">
+       </i>
+      </div>
+      <h3>
+       Sipariş Bulunamadı
+      </h3>
+      <p>
+       Girdiğiniz sipariş numarası veya e-posta adresi ile eşleşen bir sipariş bulunamadı. Lütfen bilgilerinizi kontrol edip tekrar deneyin.
+      </p>
+      <button class="btn btn-primary" id="try-again-btn">
+       Tekrar Dene
+      </button>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--! order tracking end  -->
+  <!--! policy start  -->
+  <section class="policy">
+   <div class="container">
+    <ul class="policy-list">
+     <li class="policy-item">
+      <i class="bi bi-truck">
+      </i>
+      <div class="policy-texts">
+       <strong>
+        ÜCRETSİZ TESLİMAT
+       </strong>
+       <span>
+        300.00 TL ve üzeri alışverişlerde geçerli
+       </span>
+      </div>
+     </li>
+     <li class="policy-item">
+      <i class="bi bi-headset">
+      </i>
+      <div class="policy-texts">
+       <strong>
+        7/24 DESTEK
+       </strong>
+       <span>
+        24 saat çevrimiçi
+       </span>
+      </div>
+     </li>
+     <li class="policy-item">
+      <i class="bi bi-arrow-clockwise">
+      </i>
+      <div class="policy-texts">
+       <strong>
+        15 GÜN İÇİNDE İADE
+       </strong>
+       <span>
+        15 gün içinde koşulsuz iade garantisi
+       </span>
+      </div>
+     </li>
+     <li class="policy-item">
+      <i class="bi bi-credit-card">
+      </i>
+      <div class="policy-texts">
+       <strong>
+        ÖDEME YÖNTEMİ
+       </strong>
+       <span>
+        Güvenli Ödeme
+       </span>
+      </div>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <!--! policy end  -->
+  <!--! footer start  -->
+  <footer class="footer">
+   <div class="subscribe-row">
+    <div class="container">
+     <div class="footer-row-wrapper">
+      <div class="footer-subscribe-wrapper">
+       <div class="footer-subscribe">
+        <div class="footer-subscribe-top">
+         <h3 class="subscribe-title">
+          Yeni ürünler, indirimler ve daha fazlası hakkında bilgi
+                    almak için e-posta abonesi olun.
+         </h3>
+         <p class="subscribe-desc">
+          İlk 500 TL ve üzeri siparişinizde 50 TL indirim sağlayan bir
+                    kuponu e-postayla size göndereceğiz.
+         </p>
+        </div>
+        <div class="footer-subscribe-bottom">
+         <form>
+          <input placeholder="E-posta adresinizi giriniz." type="text">
+           <button class="btn">
+            Abone Ol
+           </button>
+          </input>
+         </form>
+         <p class="privacy-text">
+          Abone olarak Şartlar &amp; Koşullarımızı ve
+          <a href="#">
+           Gizlilik &amp; Çerez Politikamızı kabul etmiş olursunuz.
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="footer-contact-wrapper">
+       <div class="footer-contact-top">
+        <h3 class="contact-title">
+         Yardıma mı ihtiyacınız var?
+         <br/>
+         (+90) 123 45 67
+        </h3>
+        <p class="contact-desc">
+         08:00 - 19:00 arası hizmetinizdeyiz.
+        </p>
+       </div>
+       <div class="footer-contact-bottom">
+        <div class="download-app">
+         <a href="#">
+          <img alt="" src="img/footer/app-store.png">
+          </img>
+         </a>
+         <a href="#">
+          <img alt="" src="img/footer/google-play.png">
+          </img>
+         </a>
+        </div>
+        <p class="privacy-text">
+         <strong>
+          Alışveriş Uygulaması:
+         </strong>
+         Siparişlerinizi yönetin
+                  ve ödeme bilgilerini kaydedin.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="widgets-row">
+    <div class="container">
+     <div class="footer-widgets">
+      <div class="brand-info">
+       <div class="footer-logo">
+        <a class="logo" href="#">
+         LOGO
+        </a>
+       </div>
+       <div class="footer-desc">
+        <p>
+         Keyifli bir alışveriş deneyimi için yanınızdayız.
+        </p>
+       </div>
+       <div class="footer-contact">
+        <p>
+         <a href="tel:+905551112233">
+          (+90) 123 45 67
+         </a>
+         –
+         <a href="mailto:info@example.com">
+          info@click-buy.com
+         </a>
+        </p>
+       </div>
+      </div>
+      <div class="widget-nav-menu">
+       <h4>
+        Bilgi
+       </h4>
+       <ul class="menu-list">
+        <li>
+         <a href="#">
+          Hakkımızda
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Gizlilik Politikası
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          İade Politikası
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Kargo Politikası
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="widget-nav-menu">
+       <h4>
+        Hesabım
+       </h4>
+       <ul class="menu-list">
+        <li>
+         <a href="#">
+          Kontrol Paneli
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Siparişlerim
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Favorilerim
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Hesap Detayları
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Siparişlerimi Takip Et
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="widget-nav-menu">
+       <h4>
+        Alışveriş
+       </h4>
+       <ul class="menu-list">
+        <li>
+         <a href="#">
+          Marka
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Çok Satanlar
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Fırsat Ürünleri
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          En Yeniler
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Satış Ürünleri
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="widget-nav-menu">
+       <h4>
+        Kategoriler
+       </h4>
+       <ul class="menu-list">
+        <li>
+         <a href="#">
+          Kadın
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Erkek
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Anne &amp; Çocuk
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Giyim
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Ayakkabı
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="copyright-row">
+    <div class="container">
+     <div class="footer-copyright">
+      <div class="site-copyright">
+       <p>
+        Copyright 2024 © Click &amp; Buy Theme. All right reserved.
+       </p>
+      </div>
+      <a href="#">
+       <img alt="" src="img/footer/cards.png"/>
+      </a>
+      <div class="footer-menu">
+       <ul class="footer-menu-list">
+        <li class="list-item">
+         <a href="#">
+          Gizlilik Politikası
+         </a>
+        </li>
+        <li class="list-item">
+         <a href="#">
+          Şartlar ve Koşullar
+         </a>
+        </li>
+        <li class="list-item">
+         <a href="#">
+          İade Politikası
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!--! footer end  -->
+  <script src="js/order-tracking.js">
+  </script>
+ </body>
+</html>

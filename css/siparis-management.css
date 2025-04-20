@@ -1,0 +1,59 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-table th, .order-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .order-table th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+  }
+  
+  .order-table td .btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 2px;
+  }
+  
+  .track-btn {
+    background-color: #1367ef;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #ef4444;
+    color: white;
+  }
+  
