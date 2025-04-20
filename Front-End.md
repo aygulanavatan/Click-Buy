@@ -28,4 +28,13 @@ index.html -> admin-login.html -> admin-panel.html -> rapor.html
 rapor.css ve rapor.js
 
 
+# Melek Yılmaz Frontend
+
+1. Ürünü Sepete Ekle
+2. Sepeti Görüntüle
+3. Favoriler Ekranı Görüntüle
+4. Siğariş Özeti Görüntüle
+5. Ürün Yorumu Görüntüle
+6. Sepeti Güncelle
+
 
