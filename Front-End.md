@@ -37,4 +37,14 @@ rapor.css ve rapor.js
 5. Ürün Yorumu Görüntüle
 6. Sepeti Güncelle
 
+# Müge Tuğ Frontend
+
+1. Kullanıcı Kayıt Olma
+2. Kullanıcı Bilgilerini Görüntüleme
+3. Sipariş Geçmişini Görüntüleme
+4. Kullanıcı Bilgilerini Düzenleme
+5. Şifre Sıfırlama
+6. Kullanıcı Giriş Yapma
+
+
 
