@@ -9,7 +9,7 @@ Frontend'i yayınladığımız domain adresi: [Click & Buy Frontend](https://cli
 5. Şifre Sıfırlama
 6. Kullanıcı Giriş Yapma  
 
-## Aygül Anavatan Frontend
+# Aygül Anavatan Frontend
 1) Ödeme Yapma 
 2) Ürün Güncelleme  
 3) Kargo Takip Numarası Ekleme  
