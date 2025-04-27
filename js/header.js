@@ -7,3 +7,5 @@ export default function () {
     console.log(toplam);
   }
   
+
+  
