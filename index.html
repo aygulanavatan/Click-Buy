@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Click & Buy</title>
+    <title>Click&Buy</title>
     <!--! Glide.js Css CDN  -->
     <link
       rel="stylesheet"
@@ -37,7 +37,7 @@
               <i class="bi bi-list" id="btn-menu"></i>
             </div>
             <div class="header-left">
-              <a href="#" class="logo">CLICK & BUY</a>
+              <a href="#" class="logo">CLICK&BUY</a>
             </div>
             <div class="header-center" id="sidebar">
               <nav class="navigation">
@@ -176,12 +176,24 @@
                 </ul>
               </nav>
               <i class="bi-x-circle" id="close-sidebar"></i>
+              
             </div>
             <div class="header-right">
               <div class="header-right-links">
-                <a href="admin-login.html" class="header-account">
-                  <i class="bi bi-person"></i>
-                </a>
+                  <div class="dropdown-wrapper">
+                    <a class="header-account" href="account.html" id="account-icon">
+                      <i class="bi bi-person"></i>
+                    </a>
+                    <div class="account-dropdown" id="account-dropdown">
+                      <ul class="account-dropdown-list">
+                        <li><a href="personal.html">Hesabım</a></li>
+                        <li><a href="order.html">Geçmiş Siparişlerim</a></li>
+                        <li><a href="account.html">Kullanıcı Girişi</a></li>
+                        <li><a href="seller-login.html">Satıcı Girişi</a></li>
+                        <li><a href="admin-login.html">Admin Paneli</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 <button class="search-button">
                   <i class="bi bi-search"></i>
                 </button>
