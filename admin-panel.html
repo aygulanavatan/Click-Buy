@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Click &amp; Buy - Yönetici Paneli</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/admin.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--! header start  -->
+    <header>
+      <div class="global-notification">
+        <div class="container2">
+          <p>
+            YÖNETİCİ PANELİ - ÜRÜN GÜNCELLEME
+            <a href="index.html"> ANA SAYFAYA DÖN </a>
+          </p>
+        </div>
+      </div>
+      <div class="header-row">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="header-left">
+              <a class="logo" href="index.html"> CLICK & BUY </a>
+            </div>
+            <div class="header-right">
+              <div class="header-right-links">
+                <div class="admin-logout">
+                  <a href="#" id="logout-btn">
+                    <i class="bi bi-box-arrow-right"> </i>
+                    <span> Çıkış </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--! header end  -->
+    <!--! admin panel start  -->
+    <section class="admin-panel">
+      <div class="container">
+        <div class="admin-wrapper">
+          <div class="admin-sidebar">
+            <h3>Yönetici Menüsü</h3>
+            <ul class="admin-menu">
+              <li class="active">
+                <a href="#product-list"> Ürün Yönetimi </a>
+              </li>
+              <li>
+                <a href="kategori-management.html">Kategori Yönetimi</a>
+              </li>
+              <li>
+                <a href="siparis-management.html"> Sipariş Yönetimi </a>
+              </li>
+              <li>
+                <a href="mesaj-panel.html"> Mesaj Paneli </a>
+              </li>
+              <li>
+                <a href="rapor.html"> Sipariş Raporları
+              </li>
+            </ul>
+          </div>
+          <div class="admin-content">
+            <div class="content-header">
+              <h2>Ürün Yönetimi</h2>
+              <div class="toolbar">
+                <div class="search-group">
+                  <input
+                    type="text"
+                    id="product-search"
+                    placeholder="Ürün ara..."
+                  />
+                  <button class="btn btn-sm search-btn">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+                <button class="btn btn-primary" id="add-product-btn">
+                  Yeni Ürün Ekle
+                </button>
+              </div>
+            </div>
+            <div class="product-list" id="product-list">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Resim</th>
+                    <th>Ürün Adı</th>
+                    <th>Kategori</th>
+                    <th>Fiyat</th>
+                    <th>İndirim</th>
+                    <th>Stok</th>
+                    <th>İşlemler</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <img
+                        alt=""
+                        class="product-mini-img"
+                        src="img/products/product1/1.png"
+                      />
+                    </td>
+                    <td>Zara Kadın Ceket - Gri</td>
+                    <td>Kadın, Giyim</td>
+                    <td>1080.00 TL</td>
+                    <td>70%</td>
+                    <td>120</td>
+                    <td>
+                      <div class="action-buttons">
+                        <a class="edit-btn" href="product-update-html.html">
+                          <i class="bi bi-pencil-fill"> </i>
+                        </a>
+                        <button class="delete-btn" data-id="1">
+                          <i class="bi bi-trash-fill"> </i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <img
+                        alt=""
+                        class="product-mini-img"
+                        src="img/products/product2/1.png"
+                      />
+                    </td>
+                    <td>Colin's Erkek Ceket - Kırmızı</td>
+                    <td>Erkek, Giyim</td>
+                    <td>899.00 TL</td>
+                    <td>50%</td>
+                    <td>78</td>
+                    <td>
+                      <div class="action-buttons">
+                        <a class="edit-btn" href="product-update-html.html">
+                          <i class="bi bi-pencil-fill"> </i>
+                        </a>
+                        <button class="delete-btn" data-id="2">
+                          <i class="bi bi-trash-fill"> </i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      <img
+                        alt=""
+                        class="product-mini-img"
+                        src="img/products/product3/1.png"
+                      />
+                    </td>
+                    <td>Coton Beyaz Elbise</td>
+                    <td>Kadın, Giyim</td>
+                    <td>300.00 TL</td>
+                    <td>70%</td>
+                    <td>45</td>
+                    <td>
+                      <div class="action-buttons">
+                        <a class="edit-btn" href="product-update-html.html">
+                          <i class="bi bi-pencil-fill"> </i>
+                        </a>
+                        <button class="delete-btn" data-id="3">
+                          <i class="bi bi-trash-fill"> </i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      <img
+                        alt=""
+                        class="product-mini-img"
+                        src="img/products/product4/1.png"
+                      />
+                    </td>
+                    <td>Stradivarius Beyaz Ceket</td>
+                    <td>Kadın, Giyim</td>
+                    <td>1260.00 TL</td>
+                    <td>70%</td>
+                    <td>32</td>
+                    <td>
+                      <div class="action-buttons">
+                        <a class="edit-btn" href="product-update-html.html">
+                          <i class="bi bi-pencil-fill"> </i>
+                        </a>
+                        <button class="delete-btn" data-id="4">
+                          <i class="bi bi-trash-fill"> </i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! admin panel end  -->
+    <!--! footer start  -->
+    <footer class="footer">
+      <div class="copyright-row">
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="site-copyright">
+              <p>Copyright 2024 © Click &amp; Buy Theme. All right reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--! footer end  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("product-search");
+        const productRows = document.querySelectorAll("#product-list tbody tr");
+
+        function filterProducts() {
+          const searchTerm = searchInput.value.toLowerCase();
+          productRows.forEach((row) => {
+            const productName = row.cells[2].textContent.toLowerCase();
+            row.style.display = productName.includes(searchTerm) ? "" : "none";
+          });
+        }
+
+        searchInput.addEventListener("input", filterProducts);
+        const searchButton = document.querySelector(".search-btn");
+        if (searchButton) {
+          searchButton.addEventListener("click", filterProducts);
+        }
+
+        // Ürün Ekle modalını aç
+        const addProductBtn = document.getElementById("add-product-btn");
+        const modal = document.getElementById("product-modal");
+        const form = document.getElementById("product-form");
+
+        addProductBtn.addEventListener("click", () => {
+          modal.style.display = "flex";
+        });
+
+        window.closeProductModal = function () {
+          modal.style.display = "none";
+        };
+
+        // Ürün formu gönderildiğinde tabloya ekle
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("product-name").value;
+          const category = document.getElementById("product-category").value;
+          const price = document.getElementById("product-price").value;
+          const discount =
+            document.getElementById("product-discount").value || "0%";
+          const stock = document.getElementById("product-stock").value;
+          const imgUrl = document.getElementById("product-img").value;
+
+          const table = document.querySelector("#product-list tbody");
+          const row = document.createElement("tr");
+          row.innerHTML = `
+        <td>-</td>
+        <td><img src="${imgUrl}" class="product-mini-img" width="50"/></td>
+        <td>${name}</td>
+        <td>${category}</td>
+        <td>${price} TL</td>
+        <td>${discount}</td>
+        <td>${stock}</td>
+        <td>
+          <div class="action-buttons">
+            <a class="edit-btn" href="#"><i class="bi bi-pencil-fill"></i></a>
+            <button class="delete-btn"><i class="bi bi-trash-fill"></i></button>
+          </div>
+        </td>
+      `;
+
+          table.appendChild(row);
+          form.reset();
+          closeProductModal();
+        });
+      });
+    </script>
+
+    <!-- Yeni Ürün Modalı -->
+    <div id="product-modal" class="product-modal" style="display: none">
+      <div class="modal-content">
+        <h3>Yeni Ürün Ekle</h3>
+        <form id="product-form">
+          <input
+            type="text"
+            id="product-name"
+            placeholder="Ürün Adı"
+            required
+          /><br /><br />
+          <input
+            type="text"
+            id="product-category"
+            placeholder="Kategori"
+            required
+          /><br /><br />
+          <input
+            type="number"
+            id="product-price"
+            placeholder="Fiyat (TL)"
+            required
+          /><br /><br />
+          <input
+            type="number"
+            id="product-discount"
+            placeholder="İndirim (%)"
+          /><br /><br />
+          <input
+            type="number"
+            id="product-stock"
+            placeholder="Stok Adedi"
+            required
+          /><br /><br />
+          <input
+            type="text"
+            id="product-img"
+            placeholder="Resim URL'si"
+          /><br /><br />
+          <button type="submit" class="btn btn-primary">Kaydet</button>
+          <button
+            type="button"
+            class="btn btn-outline"
+            onclick="closeProductModal()"
+          >
+            İptal
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

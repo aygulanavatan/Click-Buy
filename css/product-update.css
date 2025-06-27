@@ -1,0 +1,273 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .container2 {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    color: #1367ef;
+    background-color: #1367ef;
+    text-align: right;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .content-header {
+    padding: 0;
+    margin: 0;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .content-header .btn {
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: #1367ef;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .content-header .btn:hover {
+    background-color: #0d5edb;
+  }
+  
+  /* Form Container */
+  .update-form-container {
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.04);
+  }
+  
+  form#product-update-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  /* Satır Gruplama */
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #1367ef;
+    outline: none;
+  }
+  
+  /* Özellikler */
+  .product-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .feature-item {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .feature-item input {
+    flex: 1;
+  }
+  
+  .remove-feature {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .remove-feature:hover {
+    background-color: #dc2626;
+  }
+  
+  #add-feature {
+    margin-top: 10px;
+    background-color: #1367ef;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  #add-feature:hover {
+    background-color: #0d5edb;
+  }
+  
+  /* Ürün Görselleri */
+  .product-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .image-preview-container {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 200px;
+  }
+  
+  .image-preview img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .image-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .image-controls .btn-sm {
+    background-color: #1367ef;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  .image-controls .btn-sm.btn-danger {
+    background-color: #ef4444;
+  }
+  
+  .image-controls .btn-sm.btn-danger:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Ürün Durumu */
+  .status-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .status-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  /* Form Butonları */
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #1367ef;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0d5edb;
+  }
+  
+  .btn-outline {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-outline:hover {
+    background-color: #f3f3f3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .product-images {
+      flex-direction: column;
+    }
+  
+    .image-preview-container {
+      width: 100%;
+    }
+  
+    .form-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  

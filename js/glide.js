@@ -37,3 +37,8 @@ const config = {
   };
   
   new Glide(".product-carousel2", config2).mount();
+
+
+
+
+  

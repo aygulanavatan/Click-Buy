@@ -31,7 +31,7 @@ Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşıla
 
 [ Durum Senaryoları](/durum-senaryolari.md)  
 
-[ Front-End](docs/baslangic-asamasi.md)  
+[Front-End](/Front-End.md)
 
 [ Back-End](docs/back-end.md)  
 
