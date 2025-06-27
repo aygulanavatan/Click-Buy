@@ -1,5 +1,37 @@
+
+:root {
+    --navy-blue: #0a2463;
+    --light-blue: #3e92cc;
+    --red: #e63946;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #6c757d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
 .account-page {
     margin: 60px 0;
+ 
 }
 
 .account-wrapper {
@@ -67,3 +99,4 @@
     flex-direction: column;
     }
 }
+
