@@ -5,6 +5,10 @@ Redis: Kullanıldı
 RabbitMQ: Kullanıldı
 
 
+
+
+
+
 ### Melek Yılmaz Backend
 
 1.Ürünü Sepete Ekle
