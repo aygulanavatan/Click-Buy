@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Click &amp; Buy - Ödeme Sayfası</title>
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  <!-- Temel stil dosyaları -->
+  <link href="css/main.css" rel="stylesheet"/>
+  <link href="css/payment.css" rel="stylesheet"/>
+  <style>
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .modal-box input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+    .modal-box button {
+      margin-right: 5px;
+      padding: 8px 12px;
+    }
+  </style>
+</head>
+
+ <body>
+  <!--! header start  -->
+  <header>
+   <div class="global-notification">
+    <div class="container">
+     <p>
+      GÜVENLİ ALIŞVERİŞ &amp; HIZLI TESLİMAT - %100 MÜŞTERİ MEMNUNİYETİ
+      <a href="shop.html">
+       ALIŞVERİŞE DEVAM ET
+      </a>
+     </p>
+    </div>
+   </div>
+   <div class="header-row">
+    <div class="container">
+     <div class="header-wrapper">
+      <div class="header-mobile">
+       <i class="bi bi-list" id="btn-menu">
+       </i>
+      </div>
+      <div class="header-left">
+       <a class="logo" href="index.html">
+        CLICK & BUY
+       </a>
+      </div>
+      <div class="header-center" id="sidebar">
+       <nav class="navigation">
+        <ul class="menu-list">
+         <li class="menu-list-item">
+          <a class="menu-link" href="index.html">
+           ANASAYFA
+          </a>
+         </li>
+         <li class="menu-list-item">
+          <a class="menu-link" href="shop.html">
+           ALIŞVERİŞ
+          </a>
+         </li>
+         <li class="menu-list-item">
+          <a class="menu-link" href="contact.html">
+           İLETİŞİM
+          </a>
+         </li>
+        </ul>
+       </nav>
+       <i class="bi-x-circle" id="close-sidebar">
+       </i>
+      </div>
+      <div class="header-right">
+       <div class="header-right-links">
+        <a class="header-account" href="admin-login.html" title="Yönetici Girişi">
+         <i class="bi bi-person">
+         </i>
+        </a>
+        <a href="favorites.html">
+         <i class="bi bi-heart">
+         </i>
+        </a>
+        <div class="header-cart">
+         <a class="header-cart-link" href="cart.html">
+          <i class="bi bi-bag">
+          </i>
+          <span class="header-cart-count">
+           2
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!--! header end  -->
+  <!--! payment start  -->
+  <section class="payment-page">
+   <div class="container">
+    <div class="payment-progress">
+     <div class="progress-steps">
+      <div class="step completed">
+       <span class="step-icon">
+        <i class="bi bi-cart">
+        </i>
+       </span>
+       <span class="step-text">
+        Sepet
+       </span>
+      </div>
+      <div class="step-line completed">
+      </div>
+      <div class="step active">
+       <span class="step-icon">
+        <i class="bi bi-credit-card">
+        </i>
+       </span>
+       <span class="step-text">
+        Ödeme
+       </span>
+      </div>
+      <div class="step-line">
+      </div>
+      <div class="step">
+       <span class="step-icon">
+        <i class="bi bi-check-circle">
+        </i>
+       </span>
+       <span class="step-text">
+        Tamamlandı
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="payment-wrapper">
+     <div class="payment-details">
+      <div class="card payment-form">
+       <div class="card-header">
+        <h2 class="section-title">
+         Ödeme Bilgileri
+        </h2>
+       </div>
+       <div class="card-body">
+        <form id="payment-form">
+         <div class="payment-methods">
+          <h3>
+           Ödeme Yöntemi
+          </h3>
+          <div class="payment-method-options">
+           <label class="payment-method active">
+            <input checked="" name="payment-method" type="radio" value="credit-card"/>
+            <span class="method-icon">
+             <i class="bi bi-credit-card">
+             </i>
+            </span>
+            <span class="method-text">
+             Kredi Kartı
+            </span>
+           </label>
+           <label class="payment-method">
+            <input name="payment-method" type="radio" value="bank-transfer"/>
+            <span class="method-icon">
+             <i class="bi bi-bank">
+             </i>
+            </span>
+            <span class="method-text">
+             Banka Havalesi
+            </span>
+           </label>
+           <label class="payment-method">
+            <input name="payment-method" type="radio" value="digital-wallet"/>
+            <span class="method-icon">
+             <i class="bi bi-wallet2">
+             </i>
+            </span>
+            <span class="method-text">
+             Dijital Cüzdan
+            </span>
+           </label>
+          </div>
+         </div>
+         <div class="payment-method-content" id="credit-card-content">
+          <div class="credit-card-visual">
+           <div class="card-front">
+            <div class="card-type">
+             <img alt="Kart Markaları" class="card-brands" src="img/payment/card-brands.png"/>
+             <span class="detected-card-type">
+             </span>
+            </div>
+            <div class="card-number-display">
+             •••• •••• •••• ••••
+            </div>
+            <div class="card-holder-expiry">
+             <div class="card-holder">
+              <span class="label">
+               Kart Sahibi
+              </span>
+              <span class="value">
+               AD SOYAD
+              </span>
+             </div>
+             <div class="card-expiry">
+              <span class="label">
+               Son Kul. Tar.
+              </span>
+              <span class="value">
+               AA/YY
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="form-row">
+           <div class="form-group">
+            <label for="card-holder">
+             Kart Sahibi
+            </label>
+            <input id="card-holder" placeholder="Kartın üzerindeki isim" required="" type="text"/>
+           </div>
+          </div>
+          <div class="form-row">
+           <div class="form-group">
+            <label for="card-number">
+             Kart Numarası
+            </label>
+            <div class="card-number-input">
+             <input id="card-number" maxlength="19" placeholder="1234 5678 9012 3456" required="" type="text"/>
+             <span class="card-icon">
+              <i class="bi bi-credit-card">
+              </i>
+             </span>
+            </div>
+                <p id="card-number-warning" style="color: red; font-size: 0.9rem; display: none;">
+                    Kart numarası sadece rakamlardan oluşmalıdır!
+                </p>
+           </div>
+          </div>
+          <div class="form-row card-details">
+           <div class="form-group">
+            <label for="expiry-date">
+             Son Kullanma Tarihi
+            </label>
+            <input id="expiry-date" maxlength="5" placeholder="AA/YY" required="" type="text"/>
+           </div>
+           <div class="form-group">
+            <label for="cvv">
+             CVV/CVC
+            </label>
+            <div class="cvv-input">
+             <input id="cvv" maxlength="3" placeholder="123" required="" type="text"/>
+             <span class="cvv-info" title="Kartınızın arkasındaki 3 haneli güvenlik kodu">
+              <i class="bi bi-question-circle">
+              </i>
+             </span>
+            </div>
+           </div>
+          </div>
+          <script>
+  // Kart bilgisi alanlarını seç
+  const cardHolderInput = document.getElementById("card-holder");
+  const cardNumberInput = document.getElementById("card-number");
+  const expiryInput = document.getElementById("expiry-date");
+  const cvvInput = document.getElementById("cvv");
+
+  // Görseldeki alanları seç
+  const displayCardHolder = document.querySelector(".card-holder .value");
+  const displayCardNumber = document.querySelector(".card-number-display");
+  const displayExpiry = document.querySelector(".card-expiry .value");
+
+  // Kart sahibi
+  cardHolderInput.addEventListener("input", function () {
+    displayCardHolder.textContent = this.value || "AD SOYAD";
+  });
+
+  // Kart numarası (boşluklu formatlama)
+  cardNumberInput.addEventListener("input", function () {
+    let raw = this.value.replace(/\D/g, "").substring(0, 16);
+    let formatted = raw.replace(/(\d{4})(?=\d)/g, "$1 ");
+    displayCardNumber.textContent = formatted || "•••• •••• •••• ••••";
+  });
+
+  // Son kullanma tarihi
+  expiryInput.addEventListener("input", function () {
+    let raw = this.value.replace(/\D/g, "").substring(0, 4);
+    let formatted = raw.length >= 3 ? raw.slice(0, 2) + "/" + raw.slice(2) : raw;
+    displayExpiry.textContent = formatted || "AA/YY";
+  });
+
+  // CVV bilgisi görselde görünmediği için eklemeye gerek yok
+</script>
+
+          <div class="form-row">
+           <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+             <input id="save-card" name="save-card" type="checkbox"/>
+             <span class="custom-checkbox">
+             </span>
+             <span class="label-text">
+              Kart bilgilerimi kaydet
+             </span>
+            </label>
+           </div>
+          </div>
+          <div class="form-row">
+           <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+             <input checked="" id="agree-3d" name="agree-3d" type="checkbox"/>
+             <span class="custom-checkbox">
+             </span>
+             <span class="label-text">
+              3D Secure ile güvenli ödeme yapmayı kabul ediyorum
+             </span>
+            </label>
+           </div>
+          </div>
+         </div>
+         <div class="payment-method-content" id="bank-transfer-content" style="display: none;">
+          <div class="bank-accounts">
+           <h4>
+            Havale yapabileceğiniz banka hesaplarımız
+           </h4>
+           <div class="bank-account-list">
+            <div class="bank-account">
+             <div class="bank-logo">
+              <img alt="Banka Logosu" src="img/payment/bank1.png"/>
+             </div>
+             <div class="bank-info">
+              <h5>
+               Garanti Bankası
+              </h5>
+              <p>
+               Hesap Sahibi: Click &amp; Buy A.Ş.
+              </p>
+              <p>
+               IBAN: TR12 3456 7890 1234 5678 9012 34
+              </p>
+             </div>
+             <button class="copy-iban" data-iban="TR12 3456 7890 1234 5678 9012 34">
+              <i class="bi bi-clipboard">
+              </i>
+              Kopyala
+             </button>
+            </div>
+            <div class="bank-account">
+             <div class="bank-logo">
+              <img alt="Banka Logosu" src="img/payment/bank2.png"/>
+             </div>
+             <div class="bank-info">
+              <h5>
+               İş Bankası
+              </h5>
+              <p>
+               Hesap Sahibi: Click &amp; Buy A.Ş.
+              </p>
+              <p>
+               IBAN: TR98 7654 3210 9876 5432 1098 76
+              </p>
+             </div>
+             <button class="copy-iban" data-iban="TR98 7654 3210 9876 5432 1098 76">
+              <i class="bi bi-clipboard">
+              </i>
+              Kopyala
+             </button>
+            </div>
+           </div>
+           <div class="bank-transfer-info">
+            <p>
+             <i class="bi bi-info-circle">
+             </i>
+             Havale yaparken açıklama kısmına sipariş numaranızı
+             <strong>
+              (SP-1248)
+             </strong>
+             yazınız.
+            </p>
+            <p>
+             <i class="bi bi-clock">
+             </i>
+             Ödemeniz onaylandıktan sonra siparişiniz hazırlanacaktır.
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="payment-method-content" id="digital-wallet-content" style="display: none;">
+          <div class="digital-wallets">
+           <h4>
+            Dijital cüzdan ile ödeyin
+           </h4>
+           <div class="wallet-options">
+            <button class="wallet-option" data-wallet="paypal">
+             <img alt="PayPal" src="img/payment/paypal.png"/>
+             <span>
+              PayPal ile Öde
+             </span>
+            </button>
+            <button class="wallet-option" data-wallet="gpay">
+             <img alt="Google Pay" src="img/payment/gpay.png"/>
+             <span>
+              Google Pay ile Öde
+             </span>
+            </button>
+            <button class="wallet-option" data-wallet="applepay">
+             <img alt="Apple Pay" src="img/payment/applepay.png"/>
+             <span>
+              Apple Pay ile Öde
+             </span>
+            </button>
+           </div>
+           <div class="wallet-info">
+            <p>
+             <i class="bi bi-shield-lock">
+             </i>
+             Dijital cüzdan ile ödeme yapmak güvenli ve hızlıdır.
+            </p>
+            <p>
+             <i class="bi bi-arrow-right-circle">
+             </i>
+             Seçtiğiniz dijital cüzdan sayfasına yönlendirileceksiniz.
+            </p>
+           </div>
+          </div>
+         </div>
+        </form>
+       </div>
+      </div>
+      <div class="card billing-address">
+       <div class="card-header">
+        <h2 class="section-title">
+         Fatura Bilgileri
+        </h2>
+       </div>
+       <div class="card-body">
+        <div class="address-section">
+         <h3>
+          Fatura Adresi
+         </h3>
+         <div class="saved-addresses">
+          <div class="saved-address active">
+           <div class="address-header">
+            <span class="address-title">
+             Ev Adresim
+            </span>
+            <div class="address-actions">
+             <button class="btn-edit" title="Düzenle">
+              <i class="bi bi-pencil">
+              </i>
+             </button>
+             <button class="btn-delete" title="Sil">
+              <i class="bi bi-trash">
+              </i>
+             </button>
+            </div>
+           </div>
+           <div class="address-content">
+            <p>
+             <strong>
+              Ali Yılmaz
+             </strong>
+            </p>
+            <p>
+             Atatürk Mah. Gazi Cad. No: 123 Daire: 4
+            </p>
+            <p>
+             Şişli / İstanbul
+            </p>
+            <p>
+             Telefon: (0532) 123 45 67
+            </p>
+           </div>
+          </div>
+          <div class="saved-address">
+           <div class="address-header">
+            <span class="address-title">
+             İş Adresim
+            </span>
+            <div class="address-actions">
+             <button class="btn-edit" title="Düzenle">
+              <i class="bi bi-pencil">
+              </i>
+             </button>
+             <button class="btn-delete" title="Sil">
+              <i class="bi bi-trash">
+              </i>
+             </button>
+            </div>
+           </div>
+           <div class="address-content">
+            <p>
+             <strong>
+              Ali Yılmaz
+             </strong>
+            </p>
+            <p>
+             Levent Mah. İş Cad. No: 456 Kat: 8
+            </p>
+            <p>
+             Beşiktaş / İstanbul
+            </p>
+            <p>
+             Telefon: (0212) 987 65 43
+            </p>
+           </div>
+          </div>
+         </div>
+<!-- Yeni Adres Ekle Butonu -->
+<button class="btn btn-sm btn-add-address" onclick="openAddressModal()">
+  <i class="bi bi-plus-circle"></i> Yeni Adres Ekle
+</button>
+        </div>
+        <div class="invoice-type">
+         <h3>
+          Fatura Türü
+         </h3>
+         <div class="invoice-options">
+<label class="invoice-option">
+  <input name="invoice-type" type="radio" value="individual" checked />
+  <span class="option-text">Bireysel</span>
+</label>
+
+<label class="invoice-option">
+  <input name="invoice-type" type="radio" value="corporate" />
+  <span class="option-text">Kurumsal</span>
+</label>
+         </div>
+        </div>
+        <div class="corporate-info" style="display: none;">
+         <div class="form-row">
+          <div class="form-group">
+           <label for="company-name">
+            Şirket Adı
+           </label>
+           <input id="company-name" placeholder="Şirket unvanını giriniz" type="text"/>
+          </div>
+         </div>
+         <div class="form-row two-cols">
+          <div class="form-group">
+           <label for="tax-office">
+            Vergi Dairesi
+           </label>
+           <input id="tax-office" placeholder="Vergi dairesini giriniz" type="text"/>
+          </div>
+          <div class="form-group">
+           <label for="tax-id">
+            Vergi Numarası
+           </label>
+           <input id="tax-id" placeholder="Vergi numarasını giriniz" type="text"/>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="order-summary">
+      <div class="card">
+       <div class="card-header">
+        <h2 class="section-title">
+         Sipariş Özeti
+        </h2>
+       </div>
+       <div class="card-body">
+        <div class="order-items">
+         <div class="order-item">
+          <div class="item-image">
+           <img alt="Zara Kadın Ceket" src="img/products/product1/1.png"/>
+          </div>
+          <div class="item-details">
+           <h4 class="item-title">
+            Zara Kadın Ceket - Gri
+           </h4>
+           <div class="item-properties">
+            <span class="item-size">
+             Beden: M
+            </span>
+            <span class="item-color">
+             Renk: Gri
+            </span>
+            <span class="item-quantity">
+             Adet: 1
+            </span>
+           </div>
+          </div>
+          <div class="item-price">
+           1.080,00 TL
+          </div>
+         </div>
+         <div class="order-item">
+          <div class="item-image">
+           <img alt="Colin's Erkek Ceket" src="img/products/product2/1.png"/>
+          </div>
+          <div class="item-details">
+           <h4 class="item-title">
+            Colin's Erkek Ceket - Kırmızı
+           </h4>
+           <div class="item-properties">
+            <span class="item-size">
+             Beden: L
+            </span>
+            <span class="item-color">
+             Renk: Kırmızı
+            </span>
+            <span class="item-quantity">
+             Adet: 1
+            </span>
+           </div>
+          </div>
+          <div class="item-price">
+           899,00 TL
+          </div>
+         </div>
+        </div>
+        <div class="coupon-code">
+         <div class="coupon-input">
+          <input id="coupon-code" placeholder="İndirim kodu" type="text"/>
+          <button class="btn-apply">
+           Uygula
+          </button>
+         </div>
+        </div>
+        <div class="order-summary-details">
+         <div class="summary-row">
+          <span class="summary-label">
+           Ara Toplam
+          </span>
+          <span class="summary-value">
+           1.979,00 TL
+          </span>
+         </div>
+         <div class="summary-row">
+          <span class="summary-label">
+           Kargo
+          </span>
+          <span class="summary-value free">
+           Ücretsiz
+          </span>
+         </div>
+         <div class="summary-row">
+          <span class="summary-label">
+           KDV (%18)
+          </span>
+          <span class="summary-value">
+           301,87 TL
+          </span>
+         </div>
+         <div class="summary-row total">
+          <span class="summary-label">
+           Toplam
+          </span>
+          <span class="summary-value">
+           1.979,00 TL
+          </span>
+         </div>
+        </div>
+        <div class="secure-payment-info">
+         <div class="security-item">
+          <i class="bi bi-shield-check">
+          </i>
+          <span>
+           256-bit SSL ile güvenli ödeme
+          </span>
+         </div>
+         <div class="security-item">
+          <i class="bi bi-lock">
+          </i>
+          <span>
+           3D Secure ile ödeme koruması
+          </span>
+         </div>
+        </div>
+        <div class="payment-actions">
+         <button class="btn btn-primary btn-pay" id="complete-payment" type="button">
+          Ödemeyi Tamamla
+         </button>
+         <button class="btn btn-outline btn-back" type="button">
+          <a href="cart.html">
+           <i class="bi bi-arrow-left">
+           </i>
+           Sepete Dön
+          </a>
+         </button>
+        </div>
+        <div class="accepted-cards">
+         <img alt="Kabul Edilen Kartlar" src="img/payment/accepted-cards.png"/>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--! payment end  -->
+  <!--! payment success modal start  -->
+  <div class="payment-success-modal" id="success-modal">
+   <div class="modal-overlay">
+   </div>
+   <div class="modal-content">
+    <div class="success-icon">
+     <i class="bi bi-check-circle">
+     </i>
+    </div>
+    <h2>
+     Ödeme Başarılı!
+    </h2>
+    <p>
+     Siparişiniz başarıyla oluşturuldu.
+    </p>
+    <div class="order-info">
+     <div class="info-row">
+      <span class="info-label">
+       Sipariş Numarası:
+      </span>
+      <span class="info-value">
+       SP-1248
+      </span>
+     </div>
+     <div class="info-row">
+      <span class="info-label">
+       Ödeme Tutarı:
+      </span>
+      <span class="info-value">
+       1.979,00 TL
+      </span>
+     </div>
+     <div class="info-row">
+      <span class="info-label">
+       Tahmini Teslimat:
+      </span>
+      <span class="info-value">
+       15 Nisan 2025
+      </span>
+     </div>
+    </div>
+    <div class="success-text">
+     <p>
+      Sipariş detayları e-posta adresinize gönderildi.
+     </p>
+     <p>
+      Tüm siparişlerinize hesabınızdan ulaşabilirsiniz.
+     </p>
+    </div>
+    <div class="success-actions">
+     <a class="btn btn-primary" href="order-details.html">
+      Sipariş Detayları
+     </a>
+     <a class="btn btn-outline" href="index.html">
+      Alışverişe Devam Et
+     </a>
+    </div>
+   </div>
+  </div>
+  <!--! payment success modal end  -->
+
+<!-- Modal pencere yapısı -->
+<div class="address-modal" id="address-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 9999;">
+  <div class="modal-content" style="background: white; width: 90%; max-width: 500px; margin: 5% auto; padding: 20px; border-radius: 10px;">
+    <h3>Yeni Adres Ekle</h3>
+    
+    <input type="text" id="new-title" placeholder="Adres Başlığı (örn: Ev Adresim)" required><br><br>
+    <input type="text" id="new-name" placeholder="Ad Soyad" required><br><br>
+    <input type="text" id="new-street" placeholder="Cadde/Sokak, No" required><br><br>
+    <input type="text" id="new-district" placeholder="İlçe / Şehir" required><br><br>
+    <input type="text" id="new-phone" placeholder="Telefon" required><br><br>
+
+    <button id="save-new-address">Kaydet</button>
+    <button onclick="closeAddressModal()">İptal</button>
+  </div>
+</div>
+  <!--! footer start  -->
+  <footer class="footer">
+   <div class="subscribe-row">
+    <div class="container">
+     <div class="footer-row-wrapper">
+      <div class="footer-subscribe-wrapper">
+       <div class="footer-subscribe">
+        <div class="footer-subscribe-top">
+         <h3 class="subscribe-title">
+          Yeni ürünler, indirimler ve daha fazlası hakkında bilgi
+                    almak için e-posta abonesi olun.
+         </h3>
+         <p class="subscribe-desc">
+          İlk 500 TL ve üzeri siparişinizde 50 TL indirim sağlayan bir
+                    kuponu e-postayla size göndereceğiz.
+         </p>
+        </div>
+        <div class="footer-subscribe-bottom">
+         <form>
+          <input placeholder="E-posta adresinizi giriniz." type="text">
+           <button class="btn">
+            Abone Ol
+           </button>
+          </input>
+         </form>
+         <p class="privacy-text">
+          Abone olarak Şartlar &amp; Koşullarımızı ve
+          <a href="#">
+           Gizlilik &amp; Çerez Politikamızı kabul etmiş olursunuz.
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="footer-contact-wrapper">
+       <div class="footer-contact-top">
+        <h3 class="contact-title">
+         Yardıma mı ihtiyacınız var?
+         <br/>
+         (+90) 123 45 67
+        </h3>
+        <p class="contact-desc">
+         08:00 - 19:00 arası hizmetinizdeyiz.
+        </p>
+       </div>
+       <div class="footer-contact-bottom">
+        <div class="download-app">
+         <a href="#">
+          <img alt="" src="img/footer/app-store.png">
+          </img>
+         </a>
+         <a href="#">
+          <img alt="" src="img/footer/google-play.png">
+          </img>
+         </a>
+        </div>
+        <p class="privacy-text">
+         <strong>
+          Alışveriş Uygulaması:
+         </strong>
+         Siparişlerinizi yönetin
+                  ve ödeme bilgilerini kaydedin.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="widgets-row">
+    <div class="container">
+     <div class="footer-widgets">
+      <div class="brand-info">
+       <div class="footer-logo">
+        <a class="logo" href="#">
+         CLICK & BUY
+        </a>
+       </div>
+       <div class="footer-desc">
+        <p>
+         Keyifli bir alışveriş deneyimi için yanınızdayız.
+        </p>
+       </div>
+       <div class="footer-contact">
+        <p>
+         <a href="tel:+905551112233">
+          (+90) 123 45 67
+         </a>
+         –
+         <a href="mailto:info@example.com">
+          info@click-buy.com
+         </a>
+        </p>
+       </div>
+      </div>
+      <div class="widget-nav-menu">
+       <h4>
+        Bilgi
+       </h4>
+       <ul class="menu-list">
+        <li>
+         <a href="#">
+          Hakkımızda
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Gizlilik Politikası
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          İade Politikası
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Kargo Politikası
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="widget-nav-menu">
+       <h4>
+        Hesabım
+       </h4>
+       <ul class="menu-list">
+        <li>
+         <a href="#">
+          Kontrol Paneli
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Siparişlerim
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Favorilerim
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Hesap Detayları
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Siparişlerimi Takip Et
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="widget-nav-menu">
+       <h4>
+        Alışveriş
+       </h4>
+       <ul class="menu-list">
+        <li>
+         <a href="#">
+          Marka
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Çok Satanlar
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Fırsat Ürünleri
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          En Yeniler
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Satış Ürünleri
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="widget-nav-menu">
+       <h4>
+        Kategoriler
+       </h4>
+       <ul class="menu-list">
+        <li>
+         <a href="#">
+          Kadın
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Erkek
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Anne &amp; Çocuk
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Giyim
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Ayakkabı
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="copyright-row">
+    <div class="container">
+     <div class="footer-copyright">
+      <div class="site-copyright">
+       <p>
+        Copyright 2024 © Click &amp; Buy Theme. All right reserved.
+       </p>
+      </div>
+      <a href="#">
+       <img alt="" src="img/footer/cards.png">
+       </img>
+      </a>
+      <div class="footer-menu">
+       <ul class="footer-menu-list">
+        <li class="list-item">
+         <a href="#">
+          Gizlilik Politikası
+         </a>
+        </li>
+        <li class="list-item">
+         <a href="#">
+          Şartlar ve Koşullar
+         </a>
+        </li>
+        <li class="list-item">
+         <a href="#">
+          İade Politikası
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!--! footer end  -->
+  <script>
+  const methodRadios = document.querySelectorAll('input[name="payment-method"]');
+  const methodContents = {
+    "credit-card": document.getElementById("credit-card-content"),
+    "bank-transfer": document.getElementById("bank-transfer-content"),
+    "digital-wallet": document.getElementById("digital-wallet-content")
+  };
+
+  methodRadios.forEach(radio => {
+    radio.addEventListener("change", function () {
+      Object.values(methodContents).forEach(content => {
+        content.style.display = "none";
+      });
+
+      if (this.checked && methodContents[this.value]) {
+        methodContents[this.value].style.display = "block";
+      }
+
+      document.querySelectorAll(".payment-method").forEach(label => {
+        label.classList.remove("active");
+      });
+      this.closest(".payment-method").classList.add("active");
+    });
+  });
+
+  const warningText = document.getElementById("card-number-warning");
+
+
+  cardHolderInput.addEventListener("input", function () {
+    displayCardHolder.textContent = this.value || "AD SOYAD";
+  });
+
+  cardNumberInput.addEventListener("input", function () {
+    const raw = this.value;
+    const isValid = /^[0-9\s]*$/.test(raw);
+
+    if (!isValid) {
+      warningText.style.display = "block";
+    } else {
+      warningText.style.display = "none";
+    }
+
+    const digitsOnly = raw.replace(/\D/g, "").substring(0, 16);
+    const formatted = digitsOnly.replace(/(\d{4})(?=\d)/g, "$1 ");
+    this.value = formatted;
+    displayCardNumber.textContent = formatted || "•••• •••• •••• ••••";
+  });
+
+  expiryInput.addEventListener("input", function () {
+    const raw = this.value.replace(/\D/g, "").substring(0, 4);
+    const formatted = raw.length >= 3 ? raw.slice(0, 2) + "/" + raw.slice(2) : raw;
+    displayExpiry.textContent = formatted || "AA/YY";
+    this.value = formatted;
+  });
+
+function openAddressModal() {
+    document.getElementById("address-modal").style.display = "block";
+  }
+
+  function closeAddressModal() {
+    document.getElementById("address-modal").style.display = "none";
+  }
+
+  document.getElementById("save-new-address").addEventListener("click", function () {
+    const name = document.getElementById("new-name").value.trim();
+    const street = document.getElementById("new-street").value.trim();
+    const district = document.getElementById("new-district").value.trim();
+    const phone = document.getElementById("new-phone").value.trim();
+
+    if (name && street && district && phone) {
+      const addressContainer = document.querySelector(".saved-addresses");
+
+      const newAddressHTML = `
+        <div class="saved-address">
+          <div class="address-header">
+            <span class="address-title">Yeni Adres</span>
+            <div class="address-actions">
+              <button class="btn-edit" title="Düzenle">
+                <i class="bi bi-pencil"></i>
+              </button>
+              <button class="btn-delete" title="Sil">
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
+          </div>
+          <div class="address-content">
+            <p><strong>${name}</strong></p>
+            <p>${street}</p>
+            <p>${district}</p>
+            <p>Telefon: ${phone}</p>
+          </div>
+        </div>
+      `;
+
+      addressContainer.insertAdjacentHTML("beforeend", newAddressHTML);
+
+      // Temizle ve modalı kapat
+      document.getElementById("new-name").value = "";
+      document.getElementById("new-street").value = "";
+      document.getElementById("new-district").value = "";
+      document.getElementById("new-phone").value = "";
+      closeAddressModal();
+    } else {
+      alert("Lütfen tüm alanları doldurunuz.");
+    }
+  });
+</script>
+
+<style>
+  .invoice-option.active {
+    border: 2px solid #007bff;
+    background-color: #e6f0ff;
+    color: #007bff;
+  }
+</style>
+
+<script>
+  const invoiceRadios = document.querySelectorAll('input[name="invoice-type"]');
+
+  invoiceRadios.forEach((radio) => {
+    radio.addEventListener('change', () => {
+      document.querySelectorAll('.invoice-option').forEach((label) => {
+        label.classList.remove('active');
+      });
+      radio.closest('.invoice-option').classList.add('active');
+    });
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const checked = document.querySelector('input[name="invoice-type"]:checked');
+    if (checked) {
+      checked.closest('.invoice-option').classList.add('active');
+    }
+  });
+</script>
+
+<script>
+  document.querySelectorAll('input[name="invoice-type"]').forEach(function (radio) {
+    radio.addEventListener("change", function () {
+      const isCorporate = this.value === "corporate";
+      const corporateInfo = document.querySelector(".corporate-info");
+
+      // Kurumsal seçildiyse göster, değilse gizle
+      corporateInfo.style.display = isCorporate ? "block" : "none";
+
+      // Kurumsal değilse içindeki inputları temizle
+      if (!isCorporate) {
+        corporateInfo.querySelectorAll("input").forEach(input => input.value = "");
+      }
+    });
+  });
+</script>
+<script src="js/adres-islem.js"></script>
+
+ </body>
+</html>
