@@ -33,6 +33,6 @@ Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşıla
 
 [Front-End](/Front-End.md)
 
-[ Back-End](docs/back-end.md)  
+[ Back-End](/Back-End.md)  
 
 [ Video Sunum](docs/video-sunum.md)
