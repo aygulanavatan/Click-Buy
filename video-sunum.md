@@ -2,7 +2,7 @@
 
   → Bu sunumda **RabbitMQ** ve **Redis** kullanıldı. 
   
-  → **REST API** yapısı kullanılmış ve gösterilmiştir.  
+  → **REST API** yapısı kullanıldı ve gösterilmiştir.  
   
   → Belirtilen gereksinimler gösterildi.
 
