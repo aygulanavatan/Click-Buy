@@ -4,6 +4,9 @@ Redis: Kullanıldı
 
 RabbitMQ: Kullanıldı
 
+CI/CD: Kullanıldı
+
+Domain: Kullanıldı (click-and-buy.vercel.app)
 
 ###  Aygül Anavatan Backend
 1. Ödeme Yapma
