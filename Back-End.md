@@ -5,7 +5,13 @@ Redis: Kullanıldı
 RabbitMQ: Kullanıldı
 
 
-
+###  Aygül Anavatan Backend
+1. Ödeme Yapma
+2. Ürün Güncelleme
+3. Kargo Takip Numarası Ekleme
+4. Sipariş Durumu Görüntüleme
+5. Satıcı Mesaj Paneli Görüntüleme
+6. Sipariş Raporlarını Görüntüleme
 
 
 
