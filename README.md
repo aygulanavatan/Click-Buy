@@ -35,4 +35,4 @@ Click & Buy olarak, müşterilerimizin beklentilerini en üst seviyede karşıla
 
 [ Back-End](/Back-End.md)  
 
-[ Video Sunum](docs/video-sunum.md)
+[ Video Sunum](/video-sunum.md)
