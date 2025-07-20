@@ -8,59 +8,59 @@ const generateRandomAvatar = () => {
   return `https://i.pravatar.cc/300?img=${randomAvatar}`;
 };
 
-// Kullanıcı Oluşturma (Create - Register)
+// REGISTER
 router.post("/register", async (req, res) => {
   try {
-    const { username, email, password } = req.body;
+    const { username, email, password, role } = req.body;
     const defaultAvatar = generateRandomAvatar();
 
     const existingUser = await User.findOne({ email });
-
     if (existingUser) {
       return res
         .status(400)
-        .json({ error: "Email address is already registed." });
+        .json({ error: "Email address is already registered." });
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const newUser = await new User({
+    const newUser = new User({
       username,
       email,
       password: hashedPassword,
       avatar: defaultAvatar,
+      role: role || "user", // Varsayılan rol
     });
 
     await newUser.save();
-
-    res.status(201).json(newUser);
+    res.status(201).json({
+      id: newUser._id,
+      username: newUser.username,
+      email: newUser.email,
+      role: newUser.role,
+      avatar: newUser.avatar,
+    });
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "Server error." });
   }
 });
 
-// Kullanıcı girişi (Login)
+// LOGIN
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
     const user = await User.findOne({ email });
-
-    if (!user) {
-      return res.status(401).json({ error: "Invalid email." });
-    }
+    if (!user) return res.status(401).json({ error: "Invalid email." });
 
     const isPasswordValid = await bcrypt.compare(password, user.password);
-
-    if (!isPasswordValid) {
+    if (!isPasswordValid)
       return res.status(401).json({ error: "Invalid password." });
-    }
 
     res.status(200).json({
       id: user._id,
-      email: user.email,
       username: user.username,
+      email: user.email,
       role: user.role,
       avatar: user.avatar,
     });
@@ -70,10 +70,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-module.exports = router;
-
-
-//kullanıcı bilgilerini güncelleme
+// Kullanıcı bilgilerini güncelleme
 router.put("/update/:id", async (req, res) => {
   try {
     const { username, email, avatar } = req.body;
@@ -88,7 +85,6 @@ router.put("/update/:id", async (req, res) => {
       return res.status(404).json({ error: "Kullanıcı bulunamadı." });
     }
 
-    // Şifreyi yanıt objesinden çıkar
     const { password, ...userWithoutPassword } = updatedUser._doc;
 
     res.status(200).json({
@@ -101,9 +97,7 @@ router.put("/update/:id", async (req, res) => {
   }
 });
 
-
-
-// Şifre sıfırlama endpoint'i
+// Şifre sıfırlama
 router.post("/reset-password", async (req, res) => {
   try {
     const { email, newPassword } = req.body;
@@ -113,7 +107,6 @@ router.post("/reset-password", async (req, res) => {
     }
 
     const user = await User.findOne({ email });
-
     if (!user) {
       return res.status(404).json({ error: "Kayıtlı kullanıcı bulunamadı." });
     }
@@ -129,13 +122,11 @@ router.post("/reset-password", async (req, res) => {
   }
 });
 
-
 // Kullanıcı bilgilerini ID ile getir
 router.get("/profile/:id", async (req, res) => {
   try {
     const userId = req.params.id;
-
-    const user = await User.findById(userId).select("-password"); // Şifre hariç getir
+    const user = await User.findById(userId).select("-password");
 
     if (!user) {
       return res.status(404).json({ error: "Kullanıcı bulunamadı." });
@@ -148,3 +139,4 @@ router.get("/profile/:id", async (req, res) => {
   }
 });
 
+module.exports = router;
