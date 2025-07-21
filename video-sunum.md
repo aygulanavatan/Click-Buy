@@ -7,3 +7,4 @@
   → Belirtilen gereksinimler gösterildi.
 
 
+[Müge Tuğ Video Sunumu](https://drive.google.com/file/d/1serHDWfrC60V-FFSVYvr5z-TRZgWOKFn/view?usp=drive_link)
