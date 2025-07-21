@@ -31,3 +31,18 @@ Domain: Kullanıldı (click-and-buy.vercel.app)
 5.Ürün Yorumu Görüntüle Ve Ekleme
 
 6.Sepeti Güncelle
+
+
+### Müge Tuğ Backend
+
+1.Kullanıcı Kayıt Olma
+
+2.Kullanıcı Bilgilerini Görüntüleme
+
+3.Sipariş Geçmişini Görüntüleme
+
+4.Kullanıcı Bilgilerini Düzenleme
+
+5.Şifre Sıfırlama
+
+6.Kullanıcı Giriş Yapma
